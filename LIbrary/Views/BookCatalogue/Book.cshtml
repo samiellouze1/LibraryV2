@@ -1,0 +1,218 @@
+﻿@using LIbrary.ViewModels.BookCatalogue;
+
+@model BookReadVM;
+
+<section class="product_section " style="margin-bottom:0px;">
+    <div class="container" style="margin-bottom:25px;">
+        <div class="product_heading" style="margin-bottom:15px;">
+            <h2>
+                @Model.title
+            </h2>
+        </div>
+        <div style="display:flex; justify-content:center;" >
+            <div class="product_container" style=" height:400px;" >
+                <div class="box" style="height:400px;" >
+                    <div class="img-box"  >
+                        <img src=@Model.coverUrl style="width:240px; height:400px;" />
+                    </div>
+                </div>
+            </div>
+            <div class="product_container" style="margin-left:100px;height:400px;">
+                <div class="box" style="width:900px;height:400px;">
+                    <div class="box-content">
+                        <div class="detail-box" >
+                            <div class="like">
+                                <h5 style="margin-top:10px;font-family:'Franklin Gothic Medium';">
+                                    Created on: lezemni nhot eddate
+                                </h5>
+                            </div>
+                            <div class="like">
+                                <h6 style="font-family:'Franklin Gothic Medium';">
+                                    Average Rating
+                                </h6>
+                                <div class="star_container">
+                                @if (@Model.averageRating > 0)
+                                {
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                }
+                                @if (@Model.averageRating > 1)
+                                {
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                }
+                                @if (@Model.averageRating > 2)
+                                {
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                }
+                                @if (@Model.averageRating > 3)
+                                {
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                }
+                                @if (@Model.averageRating > 4)
+                                {
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-box" style="margin-top:40px;">
+                            <h5 style="text-align:left;font-family:'Franklin Gothic Medium';">
+                                Author: @Model.authorName
+                            </h5>
+                                <h5 style="text-align:left;font-family:'Franklin Gothic Medium';">
+                                Genre: @Model.genreName
+                            </h5>
+                        </div>
+
+                        <div class="detail-box" style="margin-top:20px;">
+                                <div class="text" style="display:block;font-family:'Franklin Gothic Medium';">
+                                <h5 style="text-align:left;">
+                                        Description: @Model.description
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="detail-box" style="margin-top:40px;">
+                            <div class="product_heading">
+                                <h2>
+                                    You didn't borrow this before
+                                </h2>
+                            </div>
+                            <div class="product_heading">
+                                <h2>
+                                    Borrow
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@if (Model.reviewRatings.Count>0)
+{
+    <section class="client_section" style="justify-content:center;">
+        <div class="container" >
+            <div class="product_heading" style="margin-bottom:0px;">
+                <h2>
+                    Ratings
+                </h2>
+            </div>
+        </div>
+        <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <div class="box" style="width:1200px;height:400px;">
+                                    <div class="img-box">
+                                        <img src=@Model.reviewRatings[0].borrowItem.reader.ImageUrl alt="">
+                                    </div>
+                                    <div class="detail-box" style="width:1000px;" >
+                                        <div class="client_info" >
+                                            <div class="client_name">
+                                                <h5>
+                                                    @Model.reviewRatings[0].borrowItem.reader.UserName
+                                                </h5>
+                                                <h6>
+                                                    lezem nhot date houni
+                                                </h6>
+                                            </div>
+                                            <div class="star_container" >
+                                            @if (Model.reviewRatings[0].rating > 0)
+                                            {
+                                                <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                            }
+                                            @if (Model.reviewRatings[0].rating > 1)
+                                            {
+                                                <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                            }
+                                            @if (Model.reviewRatings[0].rating > 2)
+                                            {
+                                                <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                            }
+                                            @if (Model.reviewRatings[0].rating > 3)
+                                            {
+                                                <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                            }
+                                            @if (Model.reviewRatings[0].rating > 4)
+                                            {
+                                                <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                            }
+                                            </div>
+                                        </div>
+                                        <p>
+                                            @Model.reviewRatings[0].review
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @for (int i = 1; i < Model.reviewRatings.Count; i++)
+                {
+                    <div class="carousel-item">
+                        <div class="container" >
+                            <div class="row" >
+                                <div class="col-md-10 mx-auto" >
+                                    <div class="box" style="width:1200px;height:400px;">
+                                        <div class="img-box">
+                                            <img src=@Model.reviewRatings[i].borrowItem.reader.ImageUrl alt="">
+                                        </div>
+                                        <div class="detail-box" style="width:1000px;">
+                                            <div class="client_info">
+                                                <div class="client_name">
+                                                    <h5>
+                                                        @Model.reviewRatings[i].borrowItem.reader.UserName
+                                                    </h5>
+                                                    <h6>
+                                                        lezem nhot date houni
+                                                    </h6>
+                                                </div>
+                                                <div class="star_container">
+                                                    @if (Model.reviewRatings[i].rating > 0)
+                                                    {
+                                                        <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                                    }
+                                                    @if (Model.reviewRatings[i].rating > 1)
+                                                    {
+                                                        <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                                    }
+                                                    @if (Model.reviewRatings[i].rating > 2)
+                                                    {
+                                                        <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                                    }
+                                                    @if (Model.reviewRatings[i].rating > 3)
+                                                    {
+                                                        <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                                    }
+                                                    @if (Model.reviewRatings[i].rating > 4)
+                                                    {
+                                                        <i class="fa fa-star" style="color:#e2ba1b" aria-hidden="true"></i>
+                                                    }
+                                                </div>
+                                            </div>
+                                            <p>
+                                                @Model.reviewRatings[i].review
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+                @for (int i = 1; i < Model.reviewRatings.Count; i++)
+                {
+                    <li data-target="#customCarousel2"  data-slide-to=@i.ToString()></li>
+                }
+            </ol>
+        </div>
+    </section>
+}

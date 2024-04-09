@@ -1,0 +1,71 @@
+﻿@using LIbrary.ViewModels.Auth;
+
+@model RegisterVM;
+
+
+<section class="contact_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Register
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form asp-action="Register" method="POST">
+                        <div>
+                            <input asp-for="Name" type="text" placeholder="Name" />
+                        </div>
+                        <div>
+                            <input asp-for="Email" type="email" placeholder="Email" />
+                        </div>
+                        <div>
+                            <input asp-for="imageUrl" type="text" id="imageUrlInput" placeholder="Photo URL" onchange="updateImage()" />
+                        </div>
+                        <div>
+                            <input asp-for="Password" type="password" placeholder="Password" />
+                        </div>
+                        <div>
+                            <input asp-for="ConfirmationPassword" type="password" placeholder="Confirmation password" />
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <div style="width:45px;">
+                                <input asp-for="rememberMe" type="checkbox"></img>
+                            </div>
+                            <div style="margin-left:20px;">
+                                <h5 style="margin-bottom:22px;font-family:'Franklin Gothic Medium'">Remember me</h5>
+                            </div>
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-primary" style="margin-bottom:15px;">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;margin-left:200px;margin-bottom:50px;">
+                <div id="photo_visualization" style="width: 300px; height: 300px; border-radius: 50%; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
+                    <img id="photo_img" src="https://previews.123rf.com/images/bestvectorstock/bestvectorstock1808/bestvectorstock180808154/107321388-photo-camera-of-rounded-square-shape-icon-vector-isolated-on-white-background-for-your-web-and.jpg" alt="Photo" style="max-width: 100%; max-height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <div style="display:flex; justify-content: center; align-items: center;">
+            <h6>
+                Already have an account?
+            </h6>
+            <a asp-controller="Auth" asp-action="Login">
+                <h6>
+                    &nbsp;  Login
+                </h6>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+    function updateImage() {
+        var imageUrl = document.getElementById("imageUrlInput").value;
+        document.getElementById("photo_img").src = imageUrl;
+    }
+</script>
+

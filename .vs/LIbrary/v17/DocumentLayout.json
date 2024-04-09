@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\views\\payment\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\views\\payment\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\services\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\services\\payment\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\payment\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\library\\views\\bookcatalogue\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\views\\bookcatalogue\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 468,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\appsettings.json",
+              "RelativeDocumentMoniker": "LIbrary\\appsettings.json",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\appsettings.json",
+              "RelativeToolTip": "LIbrary\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T00:08:50.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\PaymentController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:13:19.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\PaymentService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\PaymentService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Payment\\PaymentService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:19:52.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Program.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeToolTip": "LIbrary\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:09:52.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Views\\Payment\\Success.cshtml",
+              "RelativeDocumentMoniker": "LIbrary\\Views\\Payment\\Success.cshtml",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Views\\Payment\\Success.cshtml",
+              "RelativeToolTip": "LIbrary\\Views\\Payment\\Success.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T00:57:48.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:16:17.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\StripeSettings.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Services\\Payment\\StripeSettings.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Payment\\StripeSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:11:46.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:29:02.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Book.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "RelativeToolTip": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwGMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T23:03:18.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

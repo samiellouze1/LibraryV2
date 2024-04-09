@@ -1,0 +1,159 @@
+﻿@using LIbrary.ViewModels.BookCatalogue;
+
+@model List<BookReadVM>;
+
+<section class="product_section ">
+    <div class="container">
+        <div class="product_heading">
+            <h2>
+                Books
+            </h2>
+        </div>
+        <div class="row" style="margin-bottom:30px;">
+            <div class="col-md-12">
+                <div class="form_container">
+                    <form asp-action="Books" asp-controller="BookCatalogue">
+                        <div class="search-box">
+                            <input name="searchString" type="search" placeholder="Search ..." />
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="product_container">
+            @foreach (var item in Model)
+            {
+                <div class="box" style="width:350px;">
+                    <div class="box-content" style="height:auto;" >
+                        <a asp-controller="BookCatalogue" asp-action="Book" asp-route-bookId=@item.Id>
+                            <div class="img-box" style="margin-top:5px;margin-bottom:15px;height:330px;">
+                                    <img src="@item.coverUrl" alt="Click to go to page">
+                                @if (item.numberOfCopies > 0)
+                                {
+                                    <span class="label available-label">@item.numberOfCopies available copies</span>
+                                }
+                                else
+                                {
+                                    <span class="label not-available-label">No available copies</span>
+                                }
+                            </div>
+                        </a>
+
+                        <div class="detail-box" style="margin-top:5px; text-align:center;">
+                            <div class="text">
+                                <h6>
+                                    @item.authorName
+                                </h6>
+                                <h5>
+                                    <span>$</span> @item.price
+                                </h5>
+                            </div>
+                            <div class="like">
+                                <h6>
+                                    @item.title
+                                </h6>
+                                <div class="star_container">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align:center">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <div class="product_heading">
+                                    <a asp-controller="Auth" asp-action="Login">
+                                        <h2>
+                                            Login to borrow
+                                        </h2>
+                                    </a>
+                                </div>
+                            }
+                            else if (item.isAlreadyBorrowed)
+                            {
+                                <div class="product_heading">
+                                    <a asp-controller="ReturnBook" asp-action="ReturnBook" asp-route-bookId=@item.Id>
+                                        <h2 style="background-color:burlywood;">
+                                            Already borrowed, Return
+                                        </h2>
+                                    </a>
+                                </div>
+                            }
+                            else if (item.numberOfCopies > 0)
+                            {
+                                <div class="product_heading">
+                                    <a asp-controller="BorrowBook" asp-action="BorrowBook" asp-route-bookId=@item.Id >
+                                        <h2 >
+                                            Borrow book
+                                        </h2>
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="product_heading" >
+                                    <h2 style="background-color:red;">
+                                        Unavailable to borrow
+                                    </h2>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .search-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+    .img-box {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .label {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        color: white;
+        z-index: 1;
+    }
+
+    .available-label {
+        background-color: green;
+    }
+
+    .not-available-label {
+        background-color: red;
+    }
+</style>
