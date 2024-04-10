@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TheyLmQZ7nRgRXHJI7imNpsnQoGpB2JAGke067hAFjaPryz6DMFRrCSXMbXMLL7N3Jy90ySgUssMU324zoIKUA==",
+  "dgSpecHash": "2E4KWoxhNciC+Xm0dQQ5P2EtSZV2dYB4Amryzdui7gcZ5AMjZjGWOWu0TbZayPMOXHc74zkDabI+GI9dWAmn6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary\\LIbrary.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPad\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ThinkPad\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

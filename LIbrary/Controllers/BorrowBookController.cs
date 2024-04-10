@@ -20,16 +20,20 @@ namespace LIbrary.Controllers
             _bookCatalogueService = bookCatalogueService;
             _mapper = mapper;
         }
-        [Authorize(Roles ="Reader")]
-        public async Task<IActionResult> BorrowBook(string bookId)
+        //[Authorize(Roles ="Reader")]
+        //public async Task<IActionResult> BorrowBook(string bookId)
+        //{
+        //    var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
+        //    var bookVM = _mapper.Map<BookReadVM>(book);
+        //    var borrowVM = new BorrowBookVM() 
+        //    { 
+        //        bookReadVM=bookVM
+        //    };
+        //    return View(borrowVM);
+        //}
+        public IActionResult BorrowBook()
         {
-            var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
-            var bookVM = _mapper.Map<BookReadVM>(book);
-            var borrowVM = new BorrowBookVM() 
-            { 
-                bookReadVM=bookVM
-            };
-            return View(borrowVM);
+            return View();
         }
         [Authorize(Roles ="Reader")]
         [HttpPost]

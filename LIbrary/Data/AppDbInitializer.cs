@@ -124,6 +124,7 @@ namespace LIbrary.Data
                     context.SaveChanges();
                 }
                 #endregion
+
                 #region BorrowItem
                 if (!context.BorrowItem.Any())
                 {
@@ -147,8 +148,8 @@ namespace LIbrary.Data
                         new BorrowItem { Id = "1",  bookCopy = bookCopy1 ,borrowItemStatus=borrowedBorrowItemStatus,reader=reader2},
                         new BorrowItem { Id = "2",  bookCopy = bookCopy2 ,borrowItemStatus=borrowedBorrowItemStatus,reader=reader3},
                         new BorrowItem { Id = "3",  bookCopy = bookCopy3,borrowItemStatus=borrowedBorrowItemStatus,reader=reader1},
-                        new BorrowItem { Id = "4",  bookCopy = bookCopy1,borrowItemStatus=returnedBorrowItemStatus,reader=reader1,reviewRating=reviewRatingGood},
-                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad }
+                        new BorrowItem { Id = "4",  bookCopy = bookCopy1,borrowItemStatus=returnedBorrowItemStatus,reader=reader1,reviewRating=reviewRatingGood,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1)},
+                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1) }
                     });
                     context.SaveChanges();
                 }

@@ -1,5 +1,41 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
+@model BorrowBookVM;
+
+<section class="contact_section layout_padding" style="text-align: center;">
+    <div class="container">
+        <div class="heading_container" style="justify-content: center; align-items: center;">
+            <h5>
+            </h5>
+        </div>
+
+        <div class="row">
+            <div style="display: flex; justify-content: center; align-items: center; margin-left: 200px; margin-bottom: 50px;">
+                <div id="photo_visualization" style="width: auto; height: 350px; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
+                    <img id="photo_img" src="https://strangerthansf.com/scans/asimov-foundation.jpg" alt="Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+            </div>
+            <div class="col-md-7" style="margin-top: 50px;">
+                <div class="form_container">
+                    <form asp-action="Register" method="POST">
+
+                        <div>
+                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium';">Please specify the date you want to return this book </h5>
+                            <input type="date" placeholder="Date of Return" />
+                        </div>
+
+                        <div class="form-group d-flex align-items-center justify-content-center">
+                            <div>
+                                <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium';">This will cost you 5 * 5 days = zebbi</h5>
+                            </div>
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Go to check out</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

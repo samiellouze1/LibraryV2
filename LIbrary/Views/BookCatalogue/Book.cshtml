@@ -73,16 +73,25 @@
                         </div>
 
                         <div class="detail-box" style="margin-top:40px;">
-                            <div class="product_heading">
-                                <h2>
-                                    You didn't borrow this before
-                                </h2>
-                            </div>
-                            <div class="product_heading">
-                                <h2>
-                                    Borrow
-                                </h2>
-                            </div>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            @if (Model.isAlreadyBorrowed)
+                            {
+                                <div class="product_heading">
+                                    <h2>
+                                        You did borrow this before
+                                    </h2>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="product_heading">
+                                    <h2>
+                                        You did borrow this before
+                                    </h2>
+                                </div>
+                            }
+                        }
                         </div>
                     </div>
                 </div>
@@ -117,7 +126,7 @@
                                                     @Model.reviewRatings[0].borrowItem.reader.UserName
                                                 </h5>
                                                 <h6>
-                                                    lezem nhot date houni
+                                                    @Model.reviewRatings[0].borrowItem.endDate.ToString("D")
                                                 </h6>
                                             </div>
                                             <div class="star_container" >
@@ -169,7 +178,7 @@
                                                         @Model.reviewRatings[i].borrowItem.reader.UserName
                                                     </h5>
                                                     <h6>
-                                                        lezem nhot date houni
+                                                        @Model.reviewRatings[i].borrowItem.endDate.ToString("D")
                                                     </h6>
                                                 </div>
                                                 <div class="star_container">

@@ -527,6 +527,7 @@ a:focus {
   margin-bottom: 45px;
 }
 
+
 .client_section .product_heading {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,6 +737,8 @@ a:focus {
 .contact_section .heading_container {
   margin-bottom: 25px;
 }
+
+
 
 .contact_section .heading_container h2 {
   text-transform: uppercase;
