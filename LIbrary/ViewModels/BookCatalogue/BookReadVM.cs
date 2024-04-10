@@ -12,6 +12,7 @@ namespace LIbrary.ViewModels.BookCatalogue
         public int? price { get; set; }
         public string? authorName { get; set; }
         public string? genreName { get; set; }
+        public bool isCurrentlyBorrowed { get; set; }
         public bool isAlreadyBorrowed { get; set; }
         public int numberOfCopies { get; set; }
         public int averageRating { get; set; }

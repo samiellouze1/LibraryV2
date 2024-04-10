@@ -1,6 +1,7 @@
 ﻿using LIbrary.Models;
 using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
+using Stripe.Terminal;
 
 namespace LIbrary.Services.BookCatalogue
 {
@@ -55,7 +56,7 @@ namespace LIbrary.Services.BookCatalogue
 
             var reader = await _readerRepository.GetEagerReaderByIdAsync(id);
             var books = reader?.borrowItems
-                .Where(bi => bi.borrowItemStatusId == "1")
+                .Where(bi => bi.borrowItemStatusId == "2")
                 .Select(r => r.bookCopy?.book)
                 .ToList() ?? new List<Book>();
 
@@ -87,6 +88,20 @@ namespace LIbrary.Services.BookCatalogue
                 .ToList() ?? new List<Book>();
 
             return books;
+        }
+
+        public bool IsCurrentlyBorrowed(Book book, string id)
+        {
+            if (book == null)
+                throw new ArgumentNullException(nameof(book));
+
+            var readerIds = book.bookCopies
+                .SelectMany(bc => bc.borrowItems)
+                .Where(bi => bi.borrowItemStatusId == "1")
+                .Select(bi => bi.readerId)
+            .ToList();
+
+            return readerIds.Contains(id);
         }
     }
 }

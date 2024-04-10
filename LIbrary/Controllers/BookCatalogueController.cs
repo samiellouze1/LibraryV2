@@ -34,6 +34,7 @@ namespace LIbrary.Controllers
                 {
                     var bookReadVm = _mapper.Map<BookReadVM>(book);
                     bookReadVm.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);
+                    bookReadVm.isCurrentlyBorrowed = _bookCatalogueService.IsCurrentlyBorrowed(book, Id);
                     bookReadVms.Add(bookReadVm);
                 }
             }
@@ -43,23 +44,61 @@ namespace LIbrary.Controllers
         {
             var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
             var bookVM = _mapper.Map<BookReadVM>(book);
+            string Id = User.FindFirstValue("Id");
+            if (Id == null)
+            {
+
+            }
+            else
+            {
+                bookVM.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);
+                bookVM.isCurrentlyBorrowed = _bookCatalogueService.IsCurrentlyBorrowed(book, Id);
+            }
             return View(bookVM);
         }
         [Authorize(Roles ="Reader")]
-        public async Task<IActionResult> MyBorrowedBooks()
+        public async Task<IActionResult> BorrowedBooks()
         {
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetBorrowedBooksByReaderIdAsync(Id);
-            var bookVms = _mapper.Map<List<BookReadVM>>(books);
-            return View(bookVms);
+            var bookReadVms = new List<BookReadVM>();
+            if (Id == null)
+            {
+                bookReadVms = _mapper.Map<List<BookReadVM>>(books);
+            }
+            else
+            {
+                foreach (Book book in books)
+                {
+                    var bookReadVm = _mapper.Map<BookReadVM>(book);
+                    bookReadVm.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);
+                    bookReadVm.isCurrentlyBorrowed = _bookCatalogueService.IsCurrentlyBorrowed(book, Id);
+                    bookReadVms.Add(bookReadVm);
+                }
+            }
+            return View(bookReadVms);
         }
         [Authorize(Roles ="Reader")]
-        public async Task<IActionResult> MyReturnedBooks()
+        public async Task<IActionResult> ReturnedBooks()
         {
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetReturnedBooksByReaderIdAsync(Id);
-            var bookVms = _mapper.Map<List<BookReadVM>>(books);
-            return View(bookVms);
+            var bookReadVms = new List<BookReadVM>();
+            if (Id == null)
+            {
+                bookReadVms = _mapper.Map<List<BookReadVM>>(books);
+            }
+            else
+            {
+                foreach (Book book in books)
+                {
+                    var bookReadVm = _mapper.Map<BookReadVM>(book);
+                    bookReadVm.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);
+                    bookReadVm.isCurrentlyBorrowed = _bookCatalogueService.IsCurrentlyBorrowed(book, Id);
+                    bookReadVms.Add(bookReadVm);
+                }
+            }
+            return View(bookReadVms);
         }
     }
 }

@@ -72,25 +72,61 @@
                             </div>
                         </div>
 
-                        <div class="detail-box" style="margin-top:40px;">
+                        <div class="detail-box" style="margin-top:50px;">
                         @if (User.Identity.IsAuthenticated)
                         {
-                            @if (Model.isAlreadyBorrowed)
+                            @if (Model.isCurrentlyBorrowed)
                             {
-                                <div class="product_heading">
-                                    <h2>
+                                <div class="product_heading" >
+                                    <h2 style="background-color:#9f7746">
+                                        You are currently borrowing this book 
+                                    </h2>
+                                </div>
+                                <div class="product_heading" >
+                                    <h2 style="background-color:#640c0a">
+                                        Return book
+                                    </h2>
+                                </div>
+                            }
+                            else if (Model.isAlreadyBorrowed)
+                            {
+                                <div class="product_heading" >
+                                    <h2 style="background-color:#9f7746">
                                         You did borrow this before
+                                    </h2>
+                                </div>
+                                <div class="product_heading" >
+                                    <h2 style="background-color:#640c0a">
+                                        Borrow this again
                                     </h2>
                                 </div>
                             }
                             else
                             {
-                                <div class="product_heading">
-                                    <h2>
-                                        You did borrow this before
+                                <div class="product_heading" >
+                                     <h2 style="background-color:#9f7746">
+                                        You did not borrow this before
+                                    </h2>
+                                </div>
+                                <div class="product_heading" >
+                                     <h2 style="background-color:#640c0a">
+                                        Borrow
                                     </h2>
                                 </div>
                             }
+                        }
+                        else
+                        {
+                            <div class="product_heading" >
+                                <h2 style="background-color:#640c0a">
+                                    You are currently logged out
+                                </h2>
+                            </div>
+                            <div class="product_heading" >
+                                <h2 style="background-color:#640c0a">
+                                    Login to borrow this book
+                                </h2>
+                            </div>
                         }
                         </div>
                     </div>
@@ -104,7 +140,7 @@
     <section class="client_section" style="justify-content:center;">
         <div class="container" >
             <div class="product_heading" style="margin-bottom:0px;">
-                <h2>
+                <h2 style="background-color: #1B3A3A">
                     Ratings
                 </h2>
             </div>

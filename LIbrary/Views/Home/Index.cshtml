@@ -3,79 +3,143 @@
     <div class="slider_bg_box">
         <img src="@Url.Content("~/images/books-stack-with-copy-space.jpg")" alt="" style="width: 100%; height: auto; display: block;">
     </div>
-    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="detail-box">
-                                <h1>
-                                    Browse all books
-                                </h1>
-                                <p>
-                                    Selecting a book requires thoughtful consideration. It's a process of exploration, weighing options carefully. Each title beckons with the promise of adventure or knowledge, inviting readers to embark on a journey of the mind.
-                                </p>
-                                <div class="btn-box">
-                                    <a href="" class="btn1">
-                                        See all books
-                                    </a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @* borrow books *@
+                <div class="carousel-item active">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Browse all books
+                                    </h1>
+                                    <p>
+                                        Selecting a book requires thoughtful consideration. It's a process of exploration, weighing options carefully. Each title beckons with the promise of adventure or knowledge, inviting readers to embark on a journey of the mind.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Browse Books
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="detail-box">
-                                <h1>
-                                    Browse By genre
-                                </h1>
-                                <p>
-                                    Choosing a book by genre adds complexity. It involves narrowing down preferences, selecting from specific categories. Whether delving into fantasy, mystery, or romance, genres offer a pathway to stories that resonate with individual interests.
-                                </p>
-                                <div class="btn-box">
-                                    <a href="" class="btn1">
-                                        Check Our genres
-                                    </a>
+                @* return books *@
+                <div class="carousel-item">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Return a book
+                                    </h1>
+                                    <p>
+                                        Read a book, give a rating and a review, return it. It's that simple, click on the link below to be redirected to your borrowed books. We heavily advice our customers to give their honest ratings and reviews so we can assure you have a great reading experience each time.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Return a book
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="detail-box">
-                                <h1>
-                                    Browse By Author
-                                </h1>
-                                <p>
-                                    Opting for a book by a favored author is personal. It's about familiarity and trust, seeking the comfort of a known voice. Whether revisiting old favorites or discovering new works, the choice reflects a desire for connection and continuity.
-                                </p>
-                                <div class="btn-box">
-                                    <a href="" class="btn1">
-                                        Check Our authors
-                                    </a>
+                @* book history *@
+                <div class="carousel-item">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Borrow History 
+                                    </h1>
+                                    <p>
+                                        Our customers tend to feel nostalgic at times, and maybe borrow a single book two or three times. ALthough this may come as abnormal or strange to some people, we think that being nostalgic is everything we want to be after reading a book. Click on the button below to see Borrow History
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Check Our authors
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            
+            <ol class="carousel-indicators">
+                <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#customCarousel1" data-slide-to="1"></li>
+                <li data-target="#customCarousel1" data-slide-to="2"></li>
+            </ol>
         </div>
-        <ol class="carousel-indicators">
-            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#customCarousel1" data-slide-to="1"></li>
-            <li data-target="#customCarousel1" data-slide-to="2"></li>
-        </ol>
-    </div>
+    }
+    else
+    {
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @* borrow books *@
+                <div class="carousel-item active">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Browse all books
+                                    </h1>
+                                    <p>
+                                        Selecting a book requires thoughtful consideration. It's a process of exploration, weighing options carefully. Each title beckons with the promise of adventure or knowledge, inviting readers to embark on a journey of the mind.
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Browse Books
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @* login or register *@
+                <div class="carousel-item">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Authenticate
+                                    </h1>
+                                    <p>
+                                        You can browse our books, that's for sure, we do not hide books from everyone, as we believe that books are a treasure for everyone. None the less, we require our customers to log into their accounts or register an account, in order to be able to borrow and return books
+                                    </p>
+                                    <div class="btn-box">
+                                        <a href="" class="btn1">
+                                            Login
+                                        </a>
+                                        <a href="" class="btn1">
+                                            Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#customCarousel1" data-slide-to="1"></li>
+            </ol>
+        </div>
+    }
 
 </section>
 <!-- end slider section -->

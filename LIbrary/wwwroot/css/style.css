@@ -319,9 +319,9 @@ a:focus {
     border: none;
 }
 
-.slider_section .detail-box .btn-box .btn2:hover {
-  background-color: #541184;
-}
+    .slider_section .detail-box .btn-box .btn2:hover {
+        background-color: #9f7746;
+    }
 
 .slider_section .img-box img {
   width: 100%;
@@ -512,7 +512,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #541184;
+  background-color: #9f7746;
 }
 
 .product_section {
@@ -635,7 +635,7 @@ a:focus {
 }
 
 .product_section .product_container .box .btn-box a:hover {
-  background-color: #541184;
+  background-color: #9f7746;
 }
 
 
@@ -794,7 +794,7 @@ a:focus {
 }
 
 .contact_section .form_container button:hover {
-  background-color: #541184;
+  background-color: #9f7746;
 }
 
 .contact_section .map_container {
@@ -912,7 +912,7 @@ a:focus {
 }
 
 .info_section .info_form form button:hover {
-  background-color: #541184;
+  background-color: #9f7746;
 }
 
 .info_section .info_form .social_box {
