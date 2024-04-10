@@ -45,7 +45,7 @@
                                     <a class="nav-link" asp-controller="BookCatalogue" asp-action="BorrowedBooks">Return a book</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="BookCatalogue" asp-action="BorrowedBooks">Borrow History</a>
+                                    <a class="nav-link" asp-controller="BookCatalogue" asp-action="ReturnedBooks">Borrow History</a>
                                 </li>
 
                             }
@@ -57,7 +57,7 @@
                                 <div class="nav-link">@User.FindFirstValue("UserName").ToLower()</div>
                             </li>
                             <li class="nav-item" style="margin-left:20px;margin-right:10px;">
-                                <img src=@User.FindFirstValue("ImageUrl") style="border-radius: 50%; width: 30px; height: 30px;margin-top:3px;" />
+                                <img src=@User.FindFirstValue("ImageUrl") style="border-radius: 50%; width: 30px; height: 30px;margin-bottom:5px;" />
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" asp-controller="Auth" asp-action="Logout">Logout</a>

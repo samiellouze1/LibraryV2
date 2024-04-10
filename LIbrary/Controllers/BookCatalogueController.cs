@@ -38,6 +38,7 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
+            ViewBag.Title = "Browse Books";
             return View(bookReadVms);
         }
         public async Task<IActionResult> Book(string bookId)
@@ -76,7 +77,8 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
-            return View(bookReadVms);
+            ViewBag.Title = "Borrowed Books";
+            return View("Books",bookReadVms);
         }
         [Authorize(Roles ="Reader")]
         public async Task<IActionResult> ReturnedBooks()
@@ -98,7 +100,8 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
-            return View(bookReadVms);
+            ViewBag.Title = "Returned Books";
+            return View("Books",bookReadVms);
         }
     }
 }

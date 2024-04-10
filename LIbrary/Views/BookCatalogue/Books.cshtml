@@ -6,7 +6,7 @@
     <div class="container">
         <div class="product_heading">
             <h2>
-                Books
+                @ViewBag.Title
             </h2>
         </div>
         <div class="row" style="margin-bottom:30px;">
@@ -99,7 +99,7 @@
                             else
                             {
                                 <div class="product_heading" >
-                                    <h2 style="background-color:red;">
+                                    <h2 style="background-color:#640c0a;">
                                         Unavailable to borrow
                                     </h2>
                                 </div>
@@ -157,6 +157,6 @@
     }
 
     .not-available-label {
-        background-color: red;
+        background-color: #640c0a;
     }
 </style>

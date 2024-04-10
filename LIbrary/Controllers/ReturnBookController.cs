@@ -29,6 +29,10 @@ namespace LIbrary.Controllers
             ReturnBookVM returnBookVM = new ReturnBookVM() { bookReadVM=bookReadVM,confirmation=false};
             return View(returnBookVM);
         }
+        public IActionResult ReturnBook()
+        {
+            return View();
+        }
         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> ReturnBook(ReturnBookVM returnBookVM)
         {

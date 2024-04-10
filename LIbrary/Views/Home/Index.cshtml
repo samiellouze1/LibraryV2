@@ -20,7 +20,7 @@
                                         Selecting a book requires thoughtful consideration. It's a process of exploration, weighing options carefully. Each title beckons with the promise of adventure or knowledge, inviting readers to embark on a journey of the mind.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a asp-controller="Book" asp-action="Books" class="btn1">
                                             Browse Books
                                         </a>
                                     </div>
@@ -42,7 +42,7 @@
                                         Read a book, give a rating and a review, return it. It's that simple, click on the link below to be redirected to your borrowed books. We heavily advice our customers to give their honest ratings and reviews so we can assure you have a great reading experience each time.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a asp-controller="Book" asp-action="BorrowedBooks" class="btn1">
                                             Return a book
                                         </a>
                                     </div>
@@ -61,11 +61,11 @@
                                         Borrow History 
                                     </h1>
                                     <p>
-                                        Our customers tend to feel nostalgic at times, and maybe borrow a single book two or three times. ALthough this may come as abnormal or strange to some people, we think that being nostalgic is everything we want to be after reading a book. Click on the button below to see Borrow History
+                                        Our customers tend to feel nostalgic at times, and maybe borrow a single book two or three times. ALthough this may come as abnormal or strange to some people, we think that being nostalgic is everything we want to be after reading a book. 
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
-                                            Check Our authors
+                                        <a asp-controller="Book" asp-action="ReturnedBooks" class="btn1">
+                                            Borrow History
                                         </a>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                                         Selecting a book requires thoughtful consideration. It's a process of exploration, weighing options carefully. Each title beckons with the promise of adventure or knowledge, inviting readers to embark on a journey of the mind.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a asp-controller="Book" asp-action="Books" class="btn1">
                                             Browse Books
                                         </a>
                                     </div>
@@ -121,10 +121,10 @@
                                         You can browse our books, that's for sure, we do not hide books from everyone, as we believe that books are a treasure for everyone. None the less, we require our customers to log into their accounts or register an account, in order to be able to borrow and return books
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a asp-controller="Auth" asp-action="Login" class="btn1">
                                             Login
                                         </a>
-                                        <a href="" class="btn1">
+                                        <a asp-controller="Auth" asp-action="Register" class="btn1">
                                             Register
                                         </a>
                                     </div>
