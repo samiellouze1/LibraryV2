@@ -1,5 +1,97 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model ReturnBookVM;
+@using LIbrary.ViewModels.ReturnBook;
+<section class="contact_section layout_padding">
+    <div class="container">
+        <div class="heading_container" style="display: flex;">
+            <h2 >Return Book @Model.bookReadVM.title</h2>
+            <img src="@Model.bookReadVM.coverUrl" style="max-width: 100px; max-height: 100px; margin-left: auto;">
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Enjoyed the book? give it a rating and a review.</h5>
+                <div class="form_container">
+
+                    <form asp-action="ReturnBook" method="POST">
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+
+                        <div class="form-group">
+                            <input asp-for="review" type="" placeholder="Review" class="form-control" />
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <div style="width:45px;">
+                                <input asp-for="confirmation" type="checkbox"/>
+                            </div>
+                            <div style="margin-left:20px;">
+                                <h5 style="margin-bottom:22px;font-family:'Franklin Gothic Medium'">I confirm my returning</h5>
+                            </div>
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-primary">Return Book</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="display:flex; justify-content: center; align-items: center;">
+                    <h6>
+                        Want to borrow another one?
+                    </h6>
+                    <a asp-controller="BookCatalogue" asp-action="Books">
+                        <h6>
+                            &nbsp;  Browse Books
+                        </h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+            .rating label:before {
+                content: '☆'; /* Empty star */
+                padding: 5px;
+            }
+
+        .rating input:checked ~ label {
+            color: #f39c12;
+        }
+
+        .rating label {
+            opacity: 1; /* Show all labels */
+        }
+
+        .rating input:checked ~ label:before {
+            content: '★'; /* Filled star for checked input */
+        }
+</style>

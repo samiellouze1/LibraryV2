@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using LIbrary.Models;
 using LIbrary.Services.BookCatalogue;
 using LIbrary.Services.ReturnBook;
 using LIbrary.ViewModels.BookCatalogue;
@@ -27,25 +26,36 @@ namespace LIbrary.Controllers
             var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
             var bookReadVM = _mapper.Map<BookReadVM>(book);
             ReturnBookVM returnBookVM = new ReturnBookVM() { bookReadVM=bookReadVM,confirmation=false};
+            HttpContext.Session.SetString("BookId", bookId);
             return View(returnBookVM);
         }
-        public IActionResult ReturnBook()
-        {
-            return View();
-        }
+
         [Authorize(Roles = "Reader")]
+        [HttpPost]
         public async Task<IActionResult> ReturnBook(ReturnBookVM returnBookVM)
         {
-            string Id = User.FindFirstValue("Id");
-            if (returnBookVM.confirmation)
+            var bookId = HttpContext.Session.GetString("BookId");
+            var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
+            var bookVm = _mapper.Map<BookReadVM>(book);
+            returnBookVM.bookReadVM = bookVm;
+            if (!ModelState.IsValid)
             {
-                await _returnBookService.ReturnBook(returnBookVM, Id);
-                return RedirectToAction("BookCatalogue", "Books");
+                return View(returnBookVM);
             }
             else
             {
-                return RedirectToAction("BookCatalogue", "Books");
+                string Id = User.FindFirstValue("Id");
+                if (returnBookVM.confirmation)
+                {
+                    await _returnBookService.ReturnBook(returnBookVM, Id);
+                    return RedirectToAction("BorrowedBooks", "BookCatalogue");
+                }
+                else
+                {
+                    return View(returnBookVM);
+                }
             }
+
         }
     }
 }

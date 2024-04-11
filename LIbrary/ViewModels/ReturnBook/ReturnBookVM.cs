@@ -5,8 +5,9 @@ namespace LIbrary.ViewModels.ReturnBook
 {
     public class ReturnBookVM
     {
-        public BookReadVM bookReadVM { get; set; }
-        public ReviewRating reviewRating {  get; set; } = new ReviewRating();
+        public BookReadVM? bookReadVM { get; set; }
+        public string? review { get;set; }
+        public int? rating { get;set; }
         public bool confirmation { get; set; }
     }
 }

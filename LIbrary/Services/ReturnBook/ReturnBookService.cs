@@ -29,7 +29,7 @@ namespace LIbrary.Services.ReturnBook
             if (book == null)
                 throw new InvalidOperationException($"Book with ID '{returnBookVM.bookReadVM.Id}' not found.");
 
-            var borrowItems = book.bookCopies.SelectMany(bc => bc.borrowItems).Where(bi => bi.borrowItemStatusId == "2");
+            var borrowItems = book.bookCopies.SelectMany(bc => bc.borrowItems).Where(bi => bi.borrowItemStatusId == "1");
             var borrowItem = borrowItems.FirstOrDefault(bi => bi.readerId == readerId);
             if (borrowItem != null)
             {
@@ -37,7 +37,7 @@ namespace LIbrary.Services.ReturnBook
                 var returnedBorrowItemStatus = await _borrowItemStatusRepository.GetByIdAsync("2");
                 borrowItem.endDate = returnDate;
                 borrowItem.borrowItemStatus = returnedBorrowItemStatus;
-                borrowItem.reviewRating = returnBookVM.reviewRating;
+                borrowItem.reviewRating = new Models.ReviewRating() { rating=returnBookVM.rating,review=returnBookVM.review };
                 await _borrowItemRepository.UpdateAsync(borrowItem.Id, borrowItem);
             }
             else

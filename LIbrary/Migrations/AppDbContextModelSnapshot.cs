@@ -44,24 +44,29 @@ namespace LIbrary.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("authorId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("coverUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("dateOfCreation")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("genreId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("price")
+                    b.Property<int>("price")
                         .HasColumnType("int");
 
                     b.Property<string>("title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -170,11 +175,10 @@ namespace LIbrary.Migrations
                     b.Property<string>("borrowItemId")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("rating")
+                    b.Property<int?>("rating")
                         .HasColumnType("int");
 
                     b.Property<string>("review")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -404,11 +408,15 @@ namespace LIbrary.Migrations
                 {
                     b.HasOne("LIbrary.Models.Author", "author")
                         .WithMany("books")
-                        .HasForeignKey("authorId");
+                        .HasForeignKey("authorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("LIbrary.Models.Genre", "genre")
                         .WithMany("books")
-                        .HasForeignKey("genreId");
+                        .HasForeignKey("genreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("author");
 

@@ -9,8 +9,8 @@ namespace LIbrary.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
-        public string review { get; set; }
-        public int rating { get; set; }
+        public string? review { get; set; }
+        public int? rating { get; set; }
         public string? borrowItemId { get; set; }
         public virtual BorrowItem borrowItem { get; set; }
     }

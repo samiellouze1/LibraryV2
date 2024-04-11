@@ -31,15 +31,20 @@
                                     <img src="@item.coverUrl" alt="Click to go to page">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                @if (item.numberOfCopies > 0)
-                                {
-                                    <span class="label available-label">@item.numberOfCopies available copies</span>
+                                    @if (item.numberOfCopies == 1)
+                                    {
+                                        <span class="label available-label">@item.numberOfCopies available copy</span>
+                                    }
+                                    else 
+                                    {
+                                        <span class="label available-label">@item.numberOfCopies available copies</span>
+                                    }
                                 }
                                 else
                                 {
                                     <span class="label not-available-label">No available copies</span>
                                 }
-                                }
+                                
                             </div>
                         </a>
 
@@ -80,7 +85,7 @@
                             {
                                 <div class="product_heading">
                                     <a asp-controller="ReturnBook" asp-action="ReturnBook" asp-route-bookId=@item.Id>
-                                        <h2 style="background-color:burlywood;">
+                                        <h2 style="background-color:#640c0a;">
                                             Already borrowed, Return
                                         </h2>
                                     </a>
@@ -99,7 +104,7 @@
                             else
                             {
                                 <div class="product_heading" >
-                                    <h2 style="background-color:#640c0a;">
+                                    <h2 style="background-color:black;">
                                         Unavailable to borrow
                                     </h2>
                                 </div>
