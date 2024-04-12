@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\reminder\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\reminder\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\reminder\\ireminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\reminder\\ireminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\reminder\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\reminder\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\repository\\specific\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\repository\\specific\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\returnbook\\returnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,20 +91,12 @@
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412134439_V3_finebool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIbrary\\Migrations\\20240412134439_V3_finebool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\models\\finestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\models\\finestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412134128_V2_Fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIbrary\\Migrations\\20240412134128_V2_Fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412133903_V2_Fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -181,6 +185,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\data\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\data\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\migrations\\20240412134439_v3_finebool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\migrations\\20240412134439_v3_finebool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\migrations\\20240412134128_v2_fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\migrations\\20240412134128_v2_fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,34 +202,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 468,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "LIbrary\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T15:15:04.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FineService.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\FineService.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
-              "RelativeToolTip": "LIbrary\\Services\\FineReader\\FineService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T14:09:12.851Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -228,20 +214,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "BackgroundRefresh.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\BackgroundRefresh.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\BackgroundRefresh.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\BackgroundRefresh.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Reminder\\BackgroundRefresh.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T15:30:31.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T15:28:56.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T15:28:49.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FineController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\FineController.cs",
               "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
               "RelativeToolTip": "LIbrary\\Controllers\\FineController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAUwCEAAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T13:47:47.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Program.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeToolTip": "LIbrary\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T21:03:53.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FineService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\FineService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\FineReader\\FineService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T14:09:12.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T15:15:04.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IFineService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\IFineService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\IFineService.cs",
@@ -249,12 +311,11 @@
               "RelativeToolTip": "LIbrary\\Services\\FineReader\\IFineService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T14:09:03.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T14:09:03.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "BorrowBookController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\BorrowBookController.cs",
@@ -262,12 +323,11 @@
               "RelativeToolTip": "LIbrary\\Controllers\\BorrowBookController.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAA5wDsAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T16:30:43.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T16:30:43.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IFineRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\IFineRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\IFineRepository.cs",
@@ -275,12 +335,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\IFineRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:58:08.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:58:08.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "FineRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\FineRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\FineRepository.cs",
@@ -288,12 +347,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\FineRepository.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwCEAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:57:32.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:57:32.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\BookRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\BookRepository.cs",
@@ -301,12 +359,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\BookRepository.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAowCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T14:15:53.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T14:15:53.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\IBookRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\IBookRepository.cs",
@@ -314,25 +371,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\IBookRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T14:15:43.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T14:15:43.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Program.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
-              "RelativeToolTip": "LIbrary\\Program.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAAC0AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T21:03:53.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IFineStatusRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\IFineStatusRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\IFineStatusRepository.cs",
@@ -340,12 +383,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\IFineStatusRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:58:50.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:58:50.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "FineStatusRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Repository\\Specific\\FineStatusRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\FineStatusRepository.cs",
@@ -353,12 +395,11 @@
               "RelativeToolTip": "LIbrary\\Repository\\Specific\\FineStatusRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:58:25.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:58:25.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ReturnBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
@@ -366,12 +407,11 @@
               "RelativeToolTip": "LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAowDUAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T22:25:02.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T22:25:02.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AppDbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Data\\AppDbInitializer.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\AppDbInitializer.cs",
@@ -379,12 +419,11 @@
               "RelativeToolTip": "LIbrary\\Data\\AppDbInitializer.cs",
               "ViewState": "AQIAAI4AAAAAAAAAAAAIwKAAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:16:47.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T13:16:47.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IReturnBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
@@ -392,12 +431,11 @@
               "RelativeToolTip": "LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:53:12.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:53:12.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "BorrowBook.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\BorrowBook\\BorrowBook.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\BorrowBook\\BorrowBook.cshtml",
@@ -405,12 +443,11 @@
               "RelativeToolTip": "LIbrary\\Views\\BorrowBook\\BorrowBook.cshtml",
               "ViewState": "AQIAABEAAAAAAAAAAAAuwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T15:54:16.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T15:54:16.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Books.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Books.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Books.cshtml",
@@ -418,12 +455,11 @@
               "RelativeToolTip": "LIbrary\\Views\\BookCatalogue\\Books.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAK0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T12:34:18.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T12:34:18.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "BookProfile.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Profiles\\BookProfile.cs",
               "RelativeDocumentMoniker": "LIbrary\\Profiles\\BookProfile.cs",
@@ -431,12 +467,11 @@
               "RelativeToolTip": "LIbrary\\Profiles\\BookProfile.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T12:37:18.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T12:37:18.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 46,
               "Title": "20240412134439_V3_finebool.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412134439_V3_finebool.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240412134439_V3_finebool.cs",
@@ -444,12 +479,11 @@
               "RelativeToolTip": "LIbrary\\Migrations\\20240412134439_V3_finebool.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:44:40.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:44:40.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "FineStatus.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\FineStatus.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\FineStatus.cs",
@@ -457,12 +491,11 @@
               "RelativeToolTip": "LIbrary\\Models\\FineStatus.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:30:47.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:30:47.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\AppDbContext.cs",
@@ -470,12 +503,11 @@
               "RelativeToolTip": "LIbrary\\Data\\AppDbContext.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAswCIAAAB9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:27:24.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:27:24.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Shared\\_Layout.cshtml",
@@ -483,12 +515,11 @@
               "RelativeToolTip": "LIbrary\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAADwvzMAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T13:23:21.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T13:23:21.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 47,
               "Title": "20240412134128_V2_Fine.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412134128_V2_Fine.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240412134128_V2_Fine.cs",
@@ -496,12 +527,11 @@
               "RelativeToolTip": "LIbrary\\Migrations\\20240412134128_V2_Fine.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:41:29.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:41:29.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "20240412133903_V2_Fine.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240412133903_V2_Fine.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240412133903_V2_Fine.cs",
@@ -509,12 +539,11 @@
               "RelativeToolTip": "LIbrary\\Migrations\\20240412133903_V2_Fine.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:39:03.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:39:03.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "BorrowItem.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\BorrowItem.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\BorrowItem.cs",
@@ -522,12 +551,11 @@
               "RelativeToolTip": "LIbrary\\Models\\BorrowItem.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:24:58.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:24:58.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Fine.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Fine.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Fine.cs",
@@ -535,12 +563,11 @@
               "RelativeToolTip": "LIbrary\\Models\\Fine.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:22:10.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:22:10.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Genre.cs",
@@ -548,12 +575,11 @@
               "RelativeToolTip": "LIbrary\\Models\\Genre.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:24:11.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T13:24:11.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Book.cs",
@@ -561,12 +587,11 @@
               "RelativeToolTip": "LIbrary\\Models\\Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T16:37:57.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-10T16:37:57.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ReturnBookController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\ReturnBookController.cs",
@@ -578,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "ReturnBookVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\ReturnBook\\ReturnBookVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\ReturnBook\\ReturnBookVM.cs",
@@ -590,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ReviewRating.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\ReviewRating.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\ReviewRating.cs",
@@ -602,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "20240411135130_First.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240411135130_First.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240411135130_First.cs",
@@ -614,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ReturnBook.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\ReturnBook\\ReturnBook.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\ReturnBook\\ReturnBook.cshtml",
@@ -626,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "BookCatalogueService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\BookCatalogue\\BookCatalogueService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\BookCatalogue\\BookCatalogueService.cs",
@@ -638,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Auth\\Login.cshtml",
@@ -650,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Payment\\PaymentService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\PaymentService.cs",
@@ -662,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Auth\\Register.cshtml",
@@ -674,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "BookReadVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\BookCatalogue\\BookReadVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BookCatalogue\\BookReadVM.cs",
@@ -686,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "BorrowBookVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
@@ -698,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Book.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
@@ -710,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "BookCatalogueController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\BookCatalogueController.cs",
@@ -722,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Home\\Index.cshtml",
@@ -734,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "IBookCatalogueService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\BookCatalogue\\IBookCatalogueService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\BookCatalogue\\IBookCatalogueService.cs",
@@ -746,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "LIbrary\\wwwroot\\css\\style.css",
@@ -758,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "ApplicationUserClaimsPrincipalFactory.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Data\\ApplicationUserClaimsPrincipalFactory.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\ApplicationUserClaimsPrincipalFactory.cs",

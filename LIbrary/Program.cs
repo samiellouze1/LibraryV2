@@ -4,6 +4,7 @@ using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
 using LIbrary.Services.FineReader;
 using LIbrary.Services.Payment;
+using LIbrary.Services.Reminder;
 using LIbrary.Services.ReturnBook;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
@@ -44,6 +45,8 @@ builder.Services.AddScoped<IBorrowBookService, BorrowBookService>();
 builder.Services.AddScoped<IReturnBookService, ReturnBookService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IFineService, FineService>();
+builder.Services.AddScoped<IReminderService, ReminderService>();
+builder.Services.AddHostedService<BackgroundRefresh>();
 #endregion
 
 #region AutoMapper
