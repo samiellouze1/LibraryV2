@@ -22,96 +22,103 @@
             </div>
         </div>
         <div class="product_container">
+            @if(Model.Count == 0)
+            {
+                <h3>You have no @ViewBag.Title at the moment</h3>
+            }
+            else
+            {
             @foreach (var item in Model)
             {
-                <div class="box" style="width:350px;">
-                    <div class="box-content" style="height:auto;" >
-                        <a asp-controller="BookCatalogue" asp-action="Book" asp-route-bookId=@item.Id>
-                            <div class="img-box" style="margin-top:5px;margin-bottom:15px;height:330px;">
-                                    <img src="@item.coverUrl" alt="Click to go to page">
-                                @if (User.Identity.IsAuthenticated)
+            <div class="box" style="width:350px;">
+                <div class="box-content" style="height:auto;" >
+                    <a asp-controller="BookCatalogue" asp-action="Book" asp-route-bookId=@item.Id>
+                        <div class="img-box" style="margin-top:5px;margin-bottom:15px;height:330px;">
+                                <img src="@item.coverUrl" alt="Click to go to page">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @if (item.numberOfCopies == 1)
                                 {
-                                    @if (item.numberOfCopies == 1)
-                                    {
-                                        <span class="label available-label">@item.numberOfCopies available copy</span>
-                                    }
-                                    else 
-                                    {
-                                        <span class="label available-label">@item.numberOfCopies available copies</span>
-                                    }
+                                    <span class="label available-label">@item.numberOfCopies available copy</span>
                                 }
-                                else
+                                else 
                                 {
-                                    <span class="label not-available-label">No available copies</span>
+                                    <span class="label available-label">@item.numberOfCopies available copies</span>
                                 }
-                                
-                            </div>
-                        </a>
-
-                        <div class="detail-box" style="margin-top:5px; text-align:center;">
-                            <div class="text">
-                                <h6>
-                                    @item.authorName
-                                </h6>
-                                <h5>
-                                    <span>$</span> @item.price
-                                </h5>
-                            </div>
-                            <div class="like">
-                                <h6>
-                                    @item.title
-                                </h6>
-                                <div class="star_container">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="text-align:center">
-                            @if (!User.Identity.IsAuthenticated)
-                            {
-                                <div class="product_heading">
-                                    <a asp-controller="Auth" asp-action="Login">
-                                        <h2>
-                                            Login to borrow
-                                        </h2>
-                                    </a>
-                                </div>
-                            }
-                            else if (item.isAlreadyBorrowed)
-                            {
-                                <div class="product_heading">
-                                    <a asp-controller="ReturnBook" asp-action="ReturnBook" asp-route-bookId=@item.Id>
-                                        <h2 style="background-color:#640c0a;">
-                                            Already borrowed, Return
-                                        </h2>
-                                    </a>
-                                </div>
-                            }
-                            else if (item.numberOfCopies > 0)
-                            {
-                                <div class="product_heading">
-                                    <a asp-controller="BorrowBook" asp-action="BorrowBook" asp-route-bookId=@item.Id >
-                                        <h2 >
-                                            Borrow book
-                                        </h2>
-                                    </a>
-                                </div>
                             }
                             else
                             {
-                                <div class="product_heading" >
-                                    <h2 style="background-color:black;">
-                                        Unavailable to borrow
-                                    </h2>
-                                </div>
+                                <span class="label not-available-label">No available copies</span>
                             }
+                                
+                        </div>
+                    </a>
+
+                    <div class="detail-box" style="margin-top:5px; text-align:center;">
+                        <div class="text">
+                            <h6>
+                                @item.authorName
+                            </h6>
+                            <h5>
+                                <span>$</span> @item.price
+                            </h5>
+                        </div>
+                        <div class="like">
+                            <h6>
+                                @item.title
+                            </h6>
+                            <div class="star_container">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
+                    <div style="text-align:center">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <div class="product_heading">
+                                <a asp-controller="Auth" asp-action="Login">
+                                    <h2>
+                                        Login to borrow
+                                    </h2>
+                                </a>
+                            </div>
+                        }
+                        else if (item.isAlreadyBorrowed)
+                        {
+                            <div class="product_heading">
+                                <a asp-controller="ReturnBook" asp-action="ReturnBook" asp-route-bookId=@item.Id>
+                                    <h2 style="background-color:#640c0a;">
+                                        Already borrowed, Return
+                                    </h2>
+                                </a>
+                            </div>
+                        }
+                        else if (item.numberOfCopies > 0)
+                        {
+                            <div class="product_heading">
+                                <a asp-controller="BorrowBook" asp-action="BorrowBook" asp-route-bookId=@item.Id >
+                                    <h2 >
+                                        Borrow book
+                                    </h2>
+                                </a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="product_heading" >
+                                <h2 style="background-color:black;">
+                                    Unavailable to borrow
+                                </h2>
+                            </div>
+                        }
+                    </div>
                 </div>
+            </div>
+            }
             }
         </div>
     </div>

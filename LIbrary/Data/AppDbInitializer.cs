@@ -154,7 +154,14 @@ namespace LIbrary.Data
                     context.SaveChanges();
                 }
                 #endregion
-
+                if (!context.FineStatus.Any() )
+                {
+                    context.FineStatus.AddRange(new List<FineStatus>()
+                    {
+                        new FineStatus { Id = "1",status=false}, //not paid
+                        new FineStatus { Id = "2",status=true} //paid
+                    });
+                }
             }
         }
         public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationbuilder)

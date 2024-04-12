@@ -109,6 +109,9 @@ namespace LIbrary.Migrations
                     b.Property<DateTime>("endDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("fineId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("readerId")
                         .HasColumnType("nvarchar(450)");
 
@@ -126,6 +129,10 @@ namespace LIbrary.Migrations
                     b.HasIndex("bookCopyId");
 
                     b.HasIndex("borrowItemStatusId");
+
+                    b.HasIndex("fineId")
+                        .IsUnique()
+                        .HasFilter("[fineId] IS NOT NULL");
 
                     b.HasIndex("readerId");
 
@@ -149,6 +156,45 @@ namespace LIbrary.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BorrowItemStatus");
+                });
+
+            modelBuilder.Entity("LIbrary.Models.Fine", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("NumberOfDays")
+                        .HasColumnType("int");
+
+                    b.Property<string>("borrowItemId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("fineStatusId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("fineStatusId")
+                        .IsUnique()
+                        .HasFilter("[fineStatusId] IS NOT NULL");
+
+                    b.ToTable("Fine");
+                });
+
+            modelBuilder.Entity("LIbrary.Models.FineStatus", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("fineId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FineStatus");
                 });
 
             modelBuilder.Entity("LIbrary.Models.Genre", b =>
@@ -442,6 +488,10 @@ namespace LIbrary.Migrations
                         .WithMany("borrowItems")
                         .HasForeignKey("borrowItemStatusId");
 
+                    b.HasOne("LIbrary.Models.Fine", "fine")
+                        .WithOne("borrowItem")
+                        .HasForeignKey("LIbrary.Models.BorrowItem", "fineId");
+
                     b.HasOne("LIbrary.Models.Reader", "reader")
                         .WithMany("borrowItems")
                         .HasForeignKey("readerId");
@@ -454,9 +504,20 @@ namespace LIbrary.Migrations
 
                     b.Navigation("borrowItemStatus");
 
+                    b.Navigation("fine");
+
                     b.Navigation("reader");
 
                     b.Navigation("reviewRating");
+                });
+
+            modelBuilder.Entity("LIbrary.Models.Fine", b =>
+                {
+                    b.HasOne("LIbrary.Models.FineStatus", "fineStatus")
+                        .WithOne("fine")
+                        .HasForeignKey("LIbrary.Models.Fine", "fineStatusId");
+
+                    b.Navigation("fineStatus");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -528,6 +589,18 @@ namespace LIbrary.Migrations
             modelBuilder.Entity("LIbrary.Models.BorrowItemStatus", b =>
                 {
                     b.Navigation("borrowItems");
+                });
+
+            modelBuilder.Entity("LIbrary.Models.Fine", b =>
+                {
+                    b.Navigation("borrowItem")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("LIbrary.Models.FineStatus", b =>
+                {
+                    b.Navigation("fine")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("LIbrary.Models.Genre", b =>

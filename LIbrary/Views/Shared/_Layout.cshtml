@@ -48,7 +48,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-controller="BookCatalogue" asp-action="ReturnedBooks">Borrow History</a>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Fine" asp-action="MyFines">Fines</a>
+                                </li>
+        
                             }
                         </ul>
                     @if (User.Identity.IsAuthenticated)

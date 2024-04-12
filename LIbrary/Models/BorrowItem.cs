@@ -22,5 +22,7 @@ namespace LIbrary.Models
         public virtual BorrowItemStatus borrowItemStatus { get; set; } 
         public string? reviewRatingId { get; set; }
         public virtual ReviewRating reviewRating { get; set; } 
+        public string? fineId { get; set; }
+        public virtual Fine fine { get; set; } = new Fine();
     }
 }

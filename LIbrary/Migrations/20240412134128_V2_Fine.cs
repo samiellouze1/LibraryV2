@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LIbrary.Migrations
 {
     /// <inheritdoc />
-    public partial class First : Migration
+    public partial class V2_Fine : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,6 +74,19 @@ namespace LIbrary.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BorrowItemStatus", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FineStatus",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    fineId = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FineStatus", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -209,6 +222,25 @@ namespace LIbrary.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Fine",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    NumberOfDays = table.Column<int>(type: "int", nullable: false),
+                    borrowItemId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    fineStatusId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Fine", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Fine_FineStatus_fineStatusId",
+                        column: x => x.fineStatusId,
+                        principalTable: "FineStatus",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Book",
                 columns: table => new
                 {
@@ -266,7 +298,8 @@ namespace LIbrary.Migrations
                     bookCopyId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     readerId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     borrowItemStatusId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    reviewRatingId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    reviewRatingId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    fineId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -285,6 +318,11 @@ namespace LIbrary.Migrations
                         name: "FK_BorrowItem_BorrowItemStatus_borrowItemStatusId",
                         column: x => x.borrowItemStatusId,
                         principalTable: "BorrowItemStatus",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_BorrowItem_Fine_fineId",
+                        column: x => x.fineId,
+                        principalTable: "Fine",
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_BorrowItem_ReviewRating_reviewRatingId",
@@ -358,6 +396,13 @@ namespace LIbrary.Migrations
                 column: "borrowItemStatusId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BorrowItem_fineId",
+                table: "BorrowItem",
+                column: "fineId",
+                unique: true,
+                filter: "[fineId] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_BorrowItem_readerId",
                 table: "BorrowItem",
                 column: "readerId");
@@ -368,6 +413,13 @@ namespace LIbrary.Migrations
                 column: "reviewRatingId",
                 unique: true,
                 filter: "[reviewRatingId] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Fine_fineStatusId",
+                table: "Fine",
+                column: "fineStatusId",
+                unique: true,
+                filter: "[fineStatusId] IS NOT NULL");
         }
 
         /// <inheritdoc />
@@ -404,10 +456,16 @@ namespace LIbrary.Migrations
                 name: "BorrowItemStatus");
 
             migrationBuilder.DropTable(
+                name: "Fine");
+
+            migrationBuilder.DropTable(
                 name: "ReviewRating");
 
             migrationBuilder.DropTable(
                 name: "Book");
+
+            migrationBuilder.DropTable(
+                name: "FineStatus");
 
             migrationBuilder.DropTable(
                 name: "Author");
