@@ -11,9 +11,10 @@ namespace LIbrary.Controllers
         private readonly IFineService _fineService;
         private readonly IPaymentService _paymentService;
 
-        public FineController(IFineService fineService)
+        public FineController(IFineService fineService, IPaymentService paymentService)
         {
             _fineService = fineService;
+            _paymentService = paymentService;
         }
 
         public async Task <IActionResult> Fines()

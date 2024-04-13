@@ -10,7 +10,7 @@ namespace LIbrary.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         public string? bookId { get; set; }
-        public virtual Book book { get; set; }
+        public virtual Book book { get; set; } 
         public virtual ICollection<BorrowItem> borrowItems { get; set; } = new List<BorrowItem>();
         // many to many
 

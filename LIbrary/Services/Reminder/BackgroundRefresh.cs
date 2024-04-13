@@ -5,20 +5,24 @@ namespace LIbrary.Services.Reminder
 {
     public class BackgroundRefresh : IHostedService, IDisposable
     {
-        private readonly IReminderService _reminderService;
         private Timer? _timer;
+        private readonly IServiceProvider _serviceProvider;
 
-        public BackgroundRefresh(IReminderService reminderService)
+        public BackgroundRefresh(IServiceProvider serviceProvider)
         {
-            _reminderService = reminderService;
+            _serviceProvider = serviceProvider;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _timer = new Timer( SomeMethod, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
-            //_timer = new Timer( SomeMethod, null, TimeSpan.Zero, TimeSpan.FromDays(1));
-            return Task.CompletedTask;
+            using (var scope = _serviceProvider.CreateScope())
+            {
+                var scopedService = scope.ServiceProvider.GetRequiredService<IReminderService>();
+                _timer = new Timer(state => scopedService.SendEmails().Wait(), null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
+                return Task.CompletedTask;
+            }
         }
+
 
         private async void SomeMethod(object? state)
         {

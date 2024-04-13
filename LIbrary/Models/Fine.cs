@@ -10,8 +10,8 @@ namespace LIbrary.Models
         [Required]
         public int NumberOfDays { get; set; }
         public string? borrowItemId { get; set; }
-        public virtual BorrowItem borrowItem { get; set; } = new BorrowItem();
+        public virtual BorrowItem borrowItem { get; set; } 
         public string? fineStatusId { get; set; }
-        public virtual FineStatus fineStatus { get; set; } = new FineStatus();
+        public virtual FineStatus fineStatus { get; set; }
     }
 }
