@@ -21,6 +21,7 @@ namespace LIbrary.Controllers
         {
             var Id = User.FindFirstValue("Id");
             var Fines = await _fineService.GetFines(Id);
+            ViewBag.Title = "Fines";
             return View();
         }
         public async Task<IActionResult> PayFine(string fineId)

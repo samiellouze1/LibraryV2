@@ -447,6 +447,9 @@ namespace LIbrary.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("JoinedOn")
+                        .HasColumnType("datetime2");
+
                     b.HasDiscriminator().HasValue("Reader");
                 });
 

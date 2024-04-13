@@ -8,6 +8,7 @@ using LIbrary.Services.Reminder;
 using LIbrary.Services.ReturnBook;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,7 +47,11 @@ builder.Services.AddScoped<IReturnBookService, ReturnBookService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IFineService, FineService>();
 builder.Services.AddScoped<IReminderService, ReminderService>();
-builder.Services.AddHostedService<BackgroundRefresh>();
+builder.Services.AddScoped<IEmailSender,EmailSender>();
+#endregion
+
+#region hosted service
+//builder.Services.AddHostedService<BackgroundRefresh>();
 #endregion
 
 #region AutoMapper

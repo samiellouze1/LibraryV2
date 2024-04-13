@@ -180,7 +180,7 @@ namespace LIbrary.Data
                 var reader = await userManager.FindByEmailAsync(readerEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id="1",UserName = readerEmail, Email = readerEmail ,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/120645766_3263034770470903_6610932504759370937_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MjAGUgxoQTEAb7cbh1m&_nc_ht=scontent.ftun14-1.fna&oh=00_AfCUhyYkS6raLADU1zRYHzz_eWuO9wkW5gi3Hon2KylK3Q&oe=663BE137" };
+                    Reader newReader = new Reader() { Id="1",UserName = readerEmail, Email = readerEmail ,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/120645766_3263034770470903_6610932504759370937_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MjAGUgxoQTEAb7cbh1m&_nc_ht=scontent.ftun14-1.fna&oh=00_AfCUhyYkS6raLADU1zRYHzz_eWuO9wkW5gi3Hon2KylK3Q&oe=663BE137",JoinedOn=DateTime.Now };
                     await userManager.CreateAsync(newReader,"Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }
@@ -189,7 +189,7 @@ namespace LIbrary.Data
                 var secondaryreader = await userManager.FindByEmailAsync(secondaryreaderEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id = "2", UserName = secondaryreaderEmail, Email = secondaryreaderEmail, ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t39.30808-6/289057250_4012267192331843_3921978455873349113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jxNEaQzp_J4Ab50NQx9&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDbLK4fp7BhyfqQLJZF6xA1_Eb-l3wFmBL3YYzu4VKGWg&oe=661A58A0" };
+                    Reader newReader = new Reader() { Id = "2", UserName = secondaryreaderEmail, Email = secondaryreaderEmail, ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t39.30808-6/289057250_4012267192331843_3921978455873349113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jxNEaQzp_J4Ab50NQx9&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDbLK4fp7BhyfqQLJZF6xA1_Eb-l3wFmBL3YYzu4VKGWg&oe=661A58A0",JoinedOn=DateTime.Now };
                     await userManager.CreateAsync(newReader, "Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }
@@ -198,7 +198,7 @@ namespace LIbrary.Data
                 var thirdreader = await userManager.FindByEmailAsync(thirdreaderEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id = "3", UserName = thirdreaderEmail, Email = thirdreaderEmail,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/48425571_2673113052706647_5301663967544868864_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zfKDpEP7snsAb7WtfLM&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDYXePutyDaK2AJy6SE7f52odaz30f1jbkl2h3g_TTSAA&oe=663BF816" };
+                    Reader newReader = new Reader() { Id = "3", UserName = thirdreaderEmail, Email = thirdreaderEmail,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/48425571_2673113052706647_5301663967544868864_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zfKDpEP7snsAb7WtfLM&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDYXePutyDaK2AJy6SE7f52odaz30f1jbkl2h3g_TTSAA&oe=663BF816", JoinedOn = DateTime.Now };
                     await userManager.CreateAsync(newReader, "Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }

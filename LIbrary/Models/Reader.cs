@@ -9,5 +9,6 @@ namespace LIbrary.Models
     {
         public string ImageUrl { get; set; }
         public virtual ICollection<BorrowItem> borrowItems { get; set; }
+        public DateTime JoinedOn { get; set; }
     }
 }
