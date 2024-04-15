@@ -14,10 +14,30 @@
                 <div class="form_container">
                     <form asp-action="Books" asp-controller="BookCatalogue">
                         <div class="search-box">
-                            <input name="searchString" type="search" placeholder="Search ..." />
+                            <input name="searchString" type="search" placeholder="Search by title..." />
+                            <select name="genre">
+                                <option value="">Select Genre</option>
+                                @foreach (var genre in ViewBag.Genres)
+                                {
+                                    <option value="@genre">@genre</option>
+                                }
+                            </select>
+                            <select name="author">
+                                <option value="">Select Author</option>
+                                @foreach (var author in ViewBag.Authors)
+                                {
+                                    <option value="@author">@author</option>
+                                }
+                            </select>
+                            <select name="available">
+                                <option value="">Filter by availability</option>
+                                <option value="true">Available</option>
+                                <option value="false">Not Available</option>
+                            </select>
                             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -37,7 +57,11 @@
                                 <img src="@item.coverUrl" alt="Click to go to page">
                             @if (User.Identity.IsAuthenticated)
                             {
-                                @if (item.numberOfCopies == 1)
+                                @if (item.numberOfCopies == 0)
+                                {
+                                    <span class="label not-available-label">No available copies</span>
+                                }
+                                else if (item.numberOfCopies == 1)
                                 {
                                     <span class="label available-label">@item.numberOfCopies available copy</span>
                                 }

@@ -6,6 +6,7 @@ using LIbrary.Services.ReturnBook;
 using LIbrary.ViewModels.BookCatalogue;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 
 namespace LIbrary.Controllers
@@ -19,7 +20,7 @@ namespace LIbrary.Controllers
             _bookCatalogueService = bookCatalogueService;
             _mapper = mapper;
         }
-        public async Task<IActionResult> Books(string searchString)
+        public async Task<IActionResult> Books(string searchString, string author,string genre,bool? available)
         {
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetAllBooksAsync();
@@ -38,7 +39,11 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
+            bookReadVms = Filter(bookReadVms,searchString,author,genre,available);
             ViewBag.Title = "Browse Books";
+            ViewBag.Redirect = "Books";
+            ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
+            ViewBag.Authors = bookReadVms.Select(b => b.authorName).Distinct().ToList();
             return View(bookReadVms);
         }
         public async Task<IActionResult> Book(string bookId)
@@ -55,10 +60,11 @@ namespace LIbrary.Controllers
                 bookVM.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);
                 bookVM.isCurrentlyBorrowed = _bookCatalogueService.IsCurrentlyBorrowed(book, Id);
             }
+            ViewBag.Title = "Book " + bookVM.title;
             return View(bookVM);
         }
         [Authorize(Roles ="Reader")]
-        public async Task<IActionResult> BorrowedBooks()
+        public async Task<IActionResult> BorrowedBooks(string searchString, string author, string genre, bool? available)
         {
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetBorrowedBooksByReaderIdAsync(Id);
@@ -77,11 +83,15 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
+            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             ViewBag.Title = "Borrowed Books";
+            ViewBag.Redirect = "BorrowedBooks";
+            ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
+            ViewBag.Authors = bookReadVms.Select(b => b.authorName).Distinct().ToList();
             return View("Books",bookReadVms);
         }
         [Authorize(Roles ="Reader")]
-        public async Task<IActionResult> ReturnedBooks()
+        public async Task<IActionResult> ReturnedBooks(string searchString, string author, string genre, bool? available)
         {
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetReturnedBooksByReaderIdAsync(Id);
@@ -100,9 +110,39 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
+            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             ViewBag.Title = "Returned Books";
+            ViewBag.Redirect = "ReturnedBooks";
+            ViewBag.Genres = bookReadVms.Select(b=>b.genreName).Distinct().ToList();
+            ViewBag.Authors = bookReadVms.Select(b=>b.authorName).Distinct().ToList();
             return View("Books",bookReadVms);
         }
-        //filters w zebbi
+        public List<BookReadVM> Filter(List<BookReadVM> bookReadVMs, string searchString, string author, string genre, bool? available)
+        {
+            if (!searchString.IsNullOrEmpty())
+            {
+                bookReadVMs = bookReadVMs.Where(br => br.title.Contains(searchString)).ToList();
+            }
+            if (!author.IsNullOrEmpty())
+            {
+                bookReadVMs = bookReadVMs.Where(br => br.authorName == author).ToList();
+            }
+            if (!genre.IsNullOrEmpty())
+            {
+                bookReadVMs = bookReadVMs.Where(br => br.genreName == genre).ToList();
+            }
+            if (available.HasValue)
+            {
+                if (available.Value)
+                {
+                    bookReadVMs = bookReadVMs.Where(br => br.numberOfCopies > 0).ToList();
+                }
+                else
+                {
+                    bookReadVMs = bookReadVMs.Where(br=>br.numberOfCopies == 0).ToList();
+                }
+            }
+            return bookReadVMs;
+        }
     }
 }

@@ -23,13 +23,6 @@ namespace LIbrary.Services.Reminder
             }
         }
 
-
-        private async void SomeMethod(object? state)
-        {
-            Console.WriteLine("ziw ziw");
-            //_reminderService.SendEmails().Wait();
-        }
-
         public Task StopAsync(CancellationToken cancellationToken)
         {
             _timer?.Change(Timeout.Infinite, 0);
