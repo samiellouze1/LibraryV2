@@ -2,10 +2,13 @@ using LIbrary.Data;
 using LIbrary.Models;
 using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
+using LIbrary.Services.FineReader;
 using LIbrary.Services.Payment;
+using LIbrary.Services.Reminder;
 using LIbrary.Services.ReturnBook;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,7 +27,6 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builde
 //builder.Services.AddDbContext<AppDbContext>(option => option.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 #endregion
 
-
 #region Repository
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<IReviewRatingRepository, ReviewRatingRepository>();
@@ -34,6 +36,8 @@ builder.Services.AddScoped<IBorrowItemRepository, BorrowItemRepository>();
 builder.Services.AddScoped<IBorrowItemStatusRepository,BorrowItemStatusRepository>();
 builder.Services.AddScoped<IGenreRepository,GenreRepository>();
 builder.Services.AddScoped<IReaderRepository, ReaderRepository>();
+builder.Services.AddScoped<IFineRepository, FineRepository>();
+builder.Services.AddScoped<IFineStatusRepository, FineStatusRepository>();
 #endregion
 
 #region Service
@@ -41,6 +45,13 @@ builder.Services.AddScoped<IBookCatalogueService, BookCatalogueService>();
 builder.Services.AddScoped<IBorrowBookService, BorrowBookService>();
 builder.Services.AddScoped<IReturnBookService, ReturnBookService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<IFineService, FineService>();
+builder.Services.AddScoped<IReminderService, ReminderService>();
+builder.Services.AddScoped<IEmailSender,EmailSender>();
+#endregion
+
+#region hosted service
+//builder.Services.AddHostedService<BackgroundRefresh>();
 #endregion
 
 #region AutoMapper

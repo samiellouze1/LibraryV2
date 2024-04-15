@@ -15,6 +15,8 @@ namespace LIbrary.Data
         public DbSet<Reader> Reader { get; set; }
         public DbSet<BorrowItemStatus> BorrowItemStatus { get; set; }
         public DbSet<ReviewRating> ReviewRating { get; set; }
+        public DbSet<Fine> Fine { get; set; }
+        public DbSet<FineStatus> FineStatus { get; set; }   
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {            
         }
@@ -28,7 +30,9 @@ namespace LIbrary.Data
             builder.Entity<BorrowItem>().HasOne(bi => bi.borrowItemStatus).WithMany(b => b.borrowItems).HasForeignKey(bi => bi.borrowItemStatusId);
             builder.Entity<BorrowItem>().HasOne(b => b.bookCopy).WithMany(b => b.borrowItems).HasForeignKey(b => b.bookCopyId);
             builder.Entity<BorrowItem>().HasOne(bi => bi.reviewRating).WithOne(rr => rr.borrowItem).HasForeignKey<BorrowItem>(bi => bi.reviewRatingId);
+            builder.Entity<BorrowItem>().HasOne(bi => bi.fine).WithOne(f => f.borrowItem).HasForeignKey<BorrowItem>(bi => bi.fineId);
             builder.Entity<BorrowItem>().HasOne(bi => bi.reader).WithMany(b => b.borrowItems).HasForeignKey(bi => bi.readerId);
+            builder.Entity<Fine>().HasOne(f => f.fineStatus).WithOne(fs => fs.fine).HasForeignKey<Fine>(f => f.fineStatusId);
         }
     }
 }

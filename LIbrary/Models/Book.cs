@@ -18,7 +18,7 @@ namespace LIbrary.Models
         public string authorId { get; set; }
         public virtual Author author { get; set; } 
         public string genreId { get; set; }
-        public virtual Genre genre { get; set; }
-        public virtual ICollection<BookCopy> bookCopies { get; set; } = new List<BookCopy>();
+        public virtual Genre genre { get; set; } 
+        public virtual ICollection<BookCopy> bookCopies { get; set; }
     }
 }

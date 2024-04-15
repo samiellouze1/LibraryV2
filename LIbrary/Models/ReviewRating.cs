@@ -12,6 +12,6 @@ namespace LIbrary.Models
         public string? review { get; set; }
         public int? rating { get; set; }
         public string? borrowItemId { get; set; }
-        public virtual BorrowItem borrowItem { get; set; }
+        public virtual BorrowItem borrowItem { get; set; } 
     }
 }

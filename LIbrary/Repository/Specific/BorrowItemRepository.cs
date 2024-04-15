@@ -11,7 +11,7 @@ namespace LIbrary.Repository.Specific
 
         }
 
-        public Task<List<BorrowItem>> GetAllEagerBorrowItems(string id)
+        public Task<List<BorrowItem>> GetAllEagerBorrowItems()
         {
             throw new NotImplementedException();
         }
