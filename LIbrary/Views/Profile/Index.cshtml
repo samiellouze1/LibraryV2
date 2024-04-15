@@ -1,4 +1,6 @@
-﻿<section class="client_section" style="justify-content:center;">
+﻿@using LIbrary.ViewModels.Profile;
+@model ProfileReadVM;
+<section class="client_section" style="justify-content:center;">
     <div class="container">
         <div class="product_heading" style="margin-bottom:0px;">
             <h2 style="background-color: #1B3A3A">
@@ -14,29 +16,45 @@
                         <div class="col-md-10 mx-auto">
                             <div class="box" style="width:1200px;">
                                 <div class="img-box" style="margin-bottom: 300px;">
-                                    <img src=Model.reviewRatings[0].borrowItem.reader.ImageUrl alt="">
+                                    <img src=@Model.ImageUrl alt="">
                                 </div>
-                                <div class="detail-box" style="width:1000px; height: 400px; ">
+                                <div class="detail-box" style="width:1000px; height: 500px; ">
                                     <div class="client_info">
                                         <div class="client_name">
+                                            <h6>
+                                                @Model.UserName
+                                            </h6>
                                             <h5>
-                                                emailemail@gmail.com
+                                                @Model.Name
                                             </h5>
                                             <h6>
-                                                Joined the platform on dd mm yyyy
+                                                Joined the platform on @Model.JoinedOn
                                             </h6>
+
                                         </div>
-                                        <div class="star_container" style="dispaly:flex; text-align:center;">
+                                        <div class="client_name"">
                                             <h6>Books in posession</h6>
-                                            <h6>60</h6>
+                                            <h5>@Model.numberOfBooksInposession</h5>
                                             <h6>Returned Books</h6>
-                                            <h6>103</h6>
+                                            <h5>@Model.numberOfBorrowedBooks</h5>
                                         </div>
                                     </div>
-                                    <p>
-                                        houni bech naffichi les affiches mtaa lektob l5 ahsan whid tsallafhom by rating
-                                    </p>
-                                </div>
+                                @if (Model.books.Count > 0)
+                                {
+                                    <div style="margin-top:25px; display:flex; justify-content:center;" >
+                                        @foreach (var item in Model.books)
+                                        {
+                                            <img src=@item.coverUrl style="width: 150px; height: 250px; margin-right: 10px;" />
+
+                                        }
+                                    </div>
+                                    <div class="product_heading" style="margin-top:25px;align-content:right;justify-content:center;align-items:center;">
+                                        <h2 style="background-color: #1B3A3A;text-align:center;">
+                                            Book History
+                                        </h2>
+                                    </div>
+                                }
+                                 </div>
                             </div>
                         </div>
                     </div>

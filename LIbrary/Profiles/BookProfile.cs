@@ -20,6 +20,7 @@ public class BookProfile : Profile
                         .Select(bi => bi.reviewRating))
                     .Where(rating => rating != null)  // Filter out null ratings
                     .ToList()));
+        CreateMap<Book, BookCoverVM>();
     }
     private int AvailableCopies(Book book)
     {

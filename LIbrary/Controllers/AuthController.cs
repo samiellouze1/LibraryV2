@@ -78,6 +78,7 @@ namespace LIbrary.Controllers
                     {
                         var newUser = new Reader()
                         {
+                            Name = registervm.Name,
                             UserName= registervm.Email,
                             Email = registervm.Email
                         };

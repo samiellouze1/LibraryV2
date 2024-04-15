@@ -4,6 +4,7 @@ using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
 using LIbrary.Services.FineReader;
 using LIbrary.Services.Payment;
+using LIbrary.Services.Profile;
 using LIbrary.Services.Reminder;
 using LIbrary.Services.ReturnBook;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -48,6 +49,7 @@ builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IFineService, FineService>();
 builder.Services.AddScoped<IReminderService, ReminderService>();
 builder.Services.AddScoped<IEmailSender,EmailSender>();
+builder.Services.AddScoped<IProfileService,ProfileService>();
 #endregion
 
 #region hosted service

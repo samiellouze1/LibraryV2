@@ -158,8 +158,11 @@
                                     <div class="detail-box" style="width:1000px;" >
                                         <div class="client_info" >
                                             <div class="client_name">
+                                                <h6>
+                                                    @Model.reviewRatings[0].borrowItem.reader.UserName.ToLower()
+                                                </h6>
                                                 <h5>
-                                                    @Model.reviewRatings[0].borrowItem.reader.UserName
+                                                    @Model.reviewRatings[0].borrowItem.reader.Name
                                                 </h5>
                                                 <h6>
                                                     @Model.reviewRatings[0].borrowItem.endDate.ToString("D")
@@ -210,8 +213,11 @@
                                         <div class="detail-box" style="width:1000px;">
                                             <div class="client_info">
                                                 <div class="client_name">
+                                                    <h6>
+                                                        @Model.reviewRatings[i].borrowItem.reader.UserName.ToLower()
+                                                    </h6>
                                                     <h5>
-                                                        @Model.reviewRatings[i].borrowItem.reader.UserName
+                                                        @Model.reviewRatings[i].borrowItem.reader.Name
                                                     </h5>
                                                     <h6>
                                                         @Model.reviewRatings[i].borrowItem.endDate.ToString("D")

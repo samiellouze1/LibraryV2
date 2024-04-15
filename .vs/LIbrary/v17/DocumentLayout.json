@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\views\\bookcatalogue\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\views\\bookcatalogue\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\viewmodels\\bookcatalogue\\bookcovervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\viewmodels\\bookcatalogue\\bookcovervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\returnbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\returnbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\bookcataloguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\bookcataloguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\returnbook\\ireturnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\returnbook\\ireturnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 468,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +50,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Books.cshtml",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Books.cshtml",
-              "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Books.cshtml",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Books.cshtml",
-              "RelativeToolTip": "LIbrary\\Views\\BookCatalogue\\Books.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADUAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T20:16:40.273Z",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Book.cs",
+              "RelativeToolTip": "LIbrary\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T22:18:09.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "LIbrary\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "LIbrary\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AQIAACUAAAAAAAAAAAApwDEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T22:07:20.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwBkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:52:14.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookCoverVM.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
+              "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
+              "RelativeToolTip": "LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T22:14:36.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReturnBookController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\ReturnBookController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\ReturnBookController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T22:04:11.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BookCatalogueController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\BookCatalogueController.cs",
               "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
               "RelativeToolTip": "LIbrary\\Controllers\\BookCatalogueController.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAIwDAAAAAyAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T20:13:55.858Z",
+              "WhenOpened": "2024-04-15T22:04:39.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IReturnBookService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T22:04:01.842Z",
               "EditorCaption": ""
             }
           ]

@@ -450,6 +450,10 @@ namespace LIbrary.Migrations
                     b.Property<DateTime>("JoinedOn")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasDiscriminator().HasValue("Reader");
                 });
 

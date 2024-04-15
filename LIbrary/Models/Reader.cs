@@ -7,6 +7,7 @@ namespace LIbrary.Models
 {
     public class Reader: IdentityUser, IEntityBase
     {
+        public string Name { get; set; }
         public string ImageUrl { get; set; }
         public virtual ICollection<BorrowItem> borrowItems { get; set; }
         public DateTime JoinedOn { get; set; }
