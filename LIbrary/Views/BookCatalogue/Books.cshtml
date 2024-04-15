@@ -19,20 +19,48 @@
                                 <option value="">Select Genre</option>
                                 @foreach (var genre in ViewBag.Genres)
                                 {
-                                    <option value="@genre">@genre</option>
+                                    if (ViewBag.GenreValue!=null && genre == ViewBag.GenreValue)
+                                    {
+                                        <option value="@genre" selected>@genre</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@genre">@genre</option>
+                                    }
+
                                 }
                             </select>
                             <select name="author">
                                 <option value="">Select Author</option>
                                 @foreach (var author in ViewBag.Authors)
                                 {
-                                    <option value="@author">@author</option>
+                                    if (ViewBag.AuthorValue!=null && author ==ViewBag.AuthorValue)
+                                    {
+                                        <option value="@author" selected>@author</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@author">@author</option>
+                                    }
                                 }
                             </select>
                             <select name="available">
                                 <option value="">Filter by availability</option>
+                                @if (ViewBag.AvailabilityValue!=null && ViewBag.AvailabilityValue)
+                                {
+                                    <option value="true" selected>Available</option>
+                                    <option value="false">Not Available</option>
+                                }
+                                else if (ViewBag.AvailabilityValue != null && !ViewBag.AvailabilityValue)
+                                {
+                                    <option value="true">Available</option>
+                                    <option value="false" selected>Not Available</option>
+                                }
+                                else
+                                {
                                 <option value="true">Available</option>
                                 <option value="false">Not Available</option>
+                                }
                             </select>
                             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
@@ -44,7 +72,7 @@
         <div class="product_container">
             @if(Model.Count == 0)
             {
-                <h3>You have no @ViewBag.Title at the moment</h3>
+                <h3>Not found for the moment</h3>
             }
             else
             {

@@ -44,6 +44,9 @@ namespace LIbrary.Controllers
             ViewBag.Redirect = "Books";
             ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
             ViewBag.Authors = bookReadVms.Select(b => b.authorName).Distinct().ToList();
+            ViewBag.GenreValue = genre;
+            ViewBag.AuthorValue = author;
+            ViewBag.AvailabilityValue = available;
             return View(bookReadVms);
         }
         public async Task<IActionResult> Book(string bookId)
@@ -88,6 +91,9 @@ namespace LIbrary.Controllers
             ViewBag.Redirect = "BorrowedBooks";
             ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
             ViewBag.Authors = bookReadVms.Select(b => b.authorName).Distinct().ToList();
+            ViewBag.GenreValue = genre;
+            ViewBag.AuthorValue = author;
+            ViewBag.AvailabilityValue = available;
             return View("Books",bookReadVms);
         }
         [Authorize(Roles ="Reader")]
@@ -115,6 +121,9 @@ namespace LIbrary.Controllers
             ViewBag.Redirect = "ReturnedBooks";
             ViewBag.Genres = bookReadVms.Select(b=>b.genreName).Distinct().ToList();
             ViewBag.Authors = bookReadVms.Select(b=>b.authorName).Distinct().ToList();
+            ViewBag.GenreValue = genre;
+            ViewBag.AuthorValue = author;
+            ViewBag.AvailabilityValue = available;
             return View("Books",bookReadVms);
         }
         public List<BookReadVM> Filter(List<BookReadVM> bookReadVMs, string searchString, string author, string genre, bool? available)
