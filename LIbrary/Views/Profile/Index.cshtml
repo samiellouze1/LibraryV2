@@ -28,7 +28,7 @@
                                                 @Model.Name
                                             </h5>
                                             <h6>
-                                                Joined the platform on @Model.JoinedOn
+                                                Joined the platform on @Model.JoinedOn.ToString("yyyy-MM-dd")
                                             </h6>
 
                                         </div>
@@ -44,8 +44,9 @@
                                     <div style="margin-top:25px; display:flex; justify-content:center;" >
                                         @foreach (var item in Model.books)
                                         {
-                                            <img src=@item.coverUrl style="width: 150px; height: 250px; margin-right: 10px;" />
-
+                                            <a asp-controller="BookCatalogue" asp-action="BorrowedBooks">
+                                                <img src=@item.coverUrl style="width: 150px; height: 250px; margin-right: 10px;" />
+                                            </a>
                                         }
                                     </div>
                                     <div class="product_heading" style="margin-top:25px;align-content:right;justify-content:center;align-items:center;">

@@ -12,14 +12,14 @@
         <div class="row" style="margin-bottom:30px;">
             <div class="col-md-12">
                 <div class="form_container">
-                    <form asp-action="Books" asp-controller="BookCatalogue">
+                    <form asp-action="Books" asp-controller="BookCatalogue" class="filter-form">
                         <div class="search-box">
                             <input name="searchString" type="search" placeholder="Search by title..." />
-                            <select name="genre">
+                            <select name="genre" class="filter-select">
                                 <option value="">Select Genre</option>
                                 @foreach (var genre in ViewBag.Genres)
                                 {
-                                    if (ViewBag.GenreValue!=null && genre == ViewBag.GenreValue)
+                                    if (ViewBag.GenreValue != null && genre == ViewBag.GenreValue)
                                     {
                                         <option value="@genre" selected>@genre</option>
                                     }
@@ -27,14 +27,13 @@
                                     {
                                         <option value="@genre">@genre</option>
                                     }
-
                                 }
                             </select>
-                            <select name="author">
+                            <select name="author" class="filter-select">
                                 <option value="">Select Author</option>
                                 @foreach (var author in ViewBag.Authors)
                                 {
-                                    if (ViewBag.AuthorValue!=null && author ==ViewBag.AuthorValue)
+                                    if (ViewBag.AuthorValue != null && author == ViewBag.AuthorValue)
                                     {
                                         <option value="@author" selected>@author</option>
                                     }
@@ -44,9 +43,9 @@
                                     }
                                 }
                             </select>
-                            <select name="available">
+                            <select name="available" class="filter-select">
                                 <option value="">Filter by availability</option>
-                                @if (ViewBag.AvailabilityValue!=null && ViewBag.AvailabilityValue)
+                                @if (ViewBag.AvailabilityValue != null && ViewBag.AvailabilityValue)
                                 {
                                     <option value="true" selected>Available</option>
                                     <option value="false">Not Available</option>
@@ -58,14 +57,13 @@
                                 }
                                 else
                                 {
-                                <option value="true">Available</option>
-                                <option value="false">Not Available</option>
+                                    <option value="true">Available</option>
+                                    <option value="false">Not Available</option>
                                 }
                             </select>
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button type="submit" class="filter-button"><i class="fa fa-search" aria-hidden="true"></i> Filter</button>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -223,4 +221,34 @@
     .not-available-label {
         background-color: #640c0a;
     }
+
+    .filter-form {
+        margin-bottom: 20px;
+    }
+
+    .filter-select {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .filter-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .filter-button:hover {
+            background-color: #0056b3;
+        }
+
+        .filter-button i {
+            margin-right: 5px;
+        }
 </style>

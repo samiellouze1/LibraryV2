@@ -56,20 +56,12 @@ namespace LIbrary.Controllers
             {
                 var duration = (borrowBookVM.endDate - borrowBookVM.startDate).Days;
                 var amount = duration * borrowBookVM.bookReadVM.price;
-                var successUrl = Url.Action("Success", "BorrowBook", borrowBookVM, Request.Scheme);
-                var cancelUrl = Url.Action("Cancel", "BorrowBook", borrowBookVM, Request.Scheme);
+                var successUrl = Url.Action("BorrowedBooks", "BookCatalogue", null, Request.Scheme);
+                var cancelUrl = Url.Action("BorrowedBooks", "BookCatalogue", borrowBookVM, Request.Scheme);
                 var currency = "usd";
                 var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
                 return Redirect(session);
             }
-        }
-        public IActionResult Success()
-        {
-            return View();
-        }
-        public IActionResult Cancel ()
-        {
-            return View();
         }
         //[Authorize(Roles ="Reader")]
         //[HttpPost]

@@ -1,4 +1,6 @@
-﻿<section class="product_section " style="margin-bottom:0px;">
+﻿@using LIbrary.ViewModels.Fine;
+@model List<FineReadVM>;
+<section class="product_section " style="margin-bottom:0px;">
     <div class="container" style="margin-bottom:25px;">
         <div class="product_heading" style="margin-bottom:15px;">
             <h2>
@@ -7,43 +9,54 @@
         </div>
         <div style="display:flex; justify-content:center;margin-bottom:10px;">
             <div class="product_container" >
-                <div class="box" style="width:900px;">
-                    <div class="box-content" style="height:250px;">
+            @if (Model.Count>0)
+            {
+                @foreach (var fine in Model)
+                {
+                    <div class="box" style="width:900px;">
+                        <div class="box-content" style="height:350px;">
                         <div class="detail-box">
-                            <div class="like" >
+                            <div class="like">
                                 <h6 style="margin-top:10px;font-family:'Franklin Gothic Medium';">
-                                    Borrowed on:
+                                            Borrowed on: @fine.borrowItem.startDate.ToString("yyyy-MM-dd")
                                 </h6>
                                 <h6 style="margin-top:10px;font-family:'Franklin Gothic Medium';">
-                                    Supposedly returned on:
+                                            Supposedly returned on: @fine.borrowItem.supposedEndDate.ToString("yyyy-MM-dd")
                                 </h6>
                                 <h6 style="margin-top:10px;font-family:'Franklin Gothic Medium';">
-                                    Returned on:
+                                    Returned on: @fine.borrowItem.endDate.ToString("yyyy-MM-dd")
                                 </h6>
+
                             </div>
                             <div class="like" style="justify-content:center;align-items:center;">
                                 <h6 style="font-family:'Franklin Gothic Medium';">
                                     Fine total
                                 </h6>
-                                <div style="text-align:center;" >
-                                    <h3>50</h3>
-                                    <h6>(5X5X2)</h6>
+                                <div style="text-align:center;">
+                                    <h3>@((fine.borrowItem.endDate - fine.borrowItem.supposedEndDate).Days * fine.borrowItem.bookCopy.book.price * 2) </h3>
+                                            <h6>( @((fine.borrowItem.endDate - fine.borrowItem.supposedEndDate).Days) X @fine.borrowItem.bookCopy.book.price X 2 )</h6>
                                 </div>
                             </div>
                         </div>
 
                         <div class="detail-box" style="margin-top:40px;">
-                            <h5 style="text-align:left;font-family:'Franklin Gothic Medium'; margin-top: 10px;">
-                                Book name:
-                            </h5>
-                            <div class="product_heading">
-                                <h2 style="background-color:#640c0a">
-                                    Pay Fine
-                                </h2>
+                            <img src=@fine.borrowItem.bookCopy.book.coverUrl style="height:150px;margin-left:80px;" />
+                            <div class="product_heading" style="align-items:last baseline;">
+                                <a asp-controller="Fine" asp-action="PayFine" asp-route-fineId=@fine.Id >
+                                    <h2 style="background-color:#640c0a" >
+                                        Pay Fine
+                                    </h2>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            }
+            }
+            else
+            {
+                <h2>You have no fines</h2>
+            }
             </div>
         </div>
     </div>

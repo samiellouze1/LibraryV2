@@ -163,9 +163,6 @@ namespace LIbrary.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("NumberOfDays")
-                        .HasColumnType("int");
-
                     b.Property<string>("borrowItemId")
                         .HasColumnType("nvarchar(max)");
 

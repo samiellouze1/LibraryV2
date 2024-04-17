@@ -7,8 +7,6 @@ namespace LIbrary.Models
     {
         [Key]
         public string Id { get; set; }
-        [Required]
-        public int NumberOfDays { get; set; }
         public string? borrowItemId { get; set; }
         public virtual BorrowItem borrowItem { get; set; } 
         public string? fineStatusId { get; set; }

@@ -149,11 +149,13 @@ namespace LIbrary.Data
                         new BorrowItem { Id = "2",  bookCopy = bookCopy2 ,borrowItemStatus=borrowedBorrowItemStatus,reader=reader3},
                         new BorrowItem { Id = "3",  bookCopy = bookCopy3,borrowItemStatus=borrowedBorrowItemStatus,reader=reader1},
                         new BorrowItem { Id = "4",  bookCopy = bookCopy1,borrowItemStatus=returnedBorrowItemStatus,reader=reader1,reviewRating=reviewRatingGood,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1)},
-                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1) }
+                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad,startDate= new DateTime(2024,1,1),supposedEndDate=new DateTime(2024,2,1) ,endDate=  new DateTime(2024,3,1)}
                     });
                     context.SaveChanges();
                 }
                 #endregion
+
+                #region FineStatus
                 if (!context.FineStatus.Any() )
                 {
                     context.FineStatus.AddRange(new List<FineStatus>()
@@ -161,7 +163,22 @@ namespace LIbrary.Data
                         new FineStatus { Id = "1",status=false}, //not paid
                         new FineStatus { Id = "2",status=true} //paid
                     });
+                    context.SaveChanges();
                 }
+                #endregion
+
+                #region
+                if (!context.Fine.Any())
+                {
+                    BorrowItem borrowItem5 = context.BorrowItem.FirstOrDefault(bi=>bi.Id=="5");
+                    FineStatus fineStatusNotPaid = context.FineStatus.FirstOrDefault(fs => fs.Id == "1");
+                    context.Fine.AddRange(new List<Fine>()
+                    {
+                        new Fine { Id = "1", borrowItem=borrowItem5,fineStatus=fineStatusNotPaid }
+                    });
+                    context.SaveChanges();
+                }
+                #endregion
             }
         }
         public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationbuilder)
