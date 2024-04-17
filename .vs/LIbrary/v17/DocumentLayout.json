@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\bookcataloguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\bookcataloguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\emailsender\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\emailsender\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\emailsender\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\emailsender\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\reminder\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\reminder\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\emailsender\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\emailsender\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\reminder\\ireminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\reminder\\ireminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\finereader\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\finereader\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240417192933_V2_RemovedNumberOfDays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIbrary\\Migrations\\20240417192933_V2_RemovedNumberOfDays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\returnbook\\returnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\services\\finereader\\ifineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\finereader\\ifineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net core\\library\\library\\migrations\\20240417192933_v2_removednumberofdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\migrations\\20240417192933_v2_removednumberofdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,6 +111,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BookCatalogueController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\BookCatalogueController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\BookCatalogueController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwE0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:02:24.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Program.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Program.cs",
+              "RelativeToolTip": "LIbrary\\Program.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:04:15.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\EmailSender.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\EmailSender\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\EmailSender.cs",
+              "RelativeToolTip": "LIbrary\\Services\\EmailSender\\EmailSender.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwBEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:50:42.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\appsettings.json",
+              "RelativeDocumentMoniker": "LIbrary\\appsettings.json",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\appsettings.json",
+              "RelativeToolTip": "LIbrary\\appsettings.json",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwBQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T19:54:17.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\EmailSender\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\EmailSettings.cs",
+              "RelativeToolTip": "LIbrary\\Services\\EmailSender\\EmailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:13:05.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Reminder\\ReminderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:50:50.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BackgroundRefresh.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\BackgroundRefresh.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
+              "RelativeToolTip": "LIbrary\\Services\\BackgroundRefresh.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:51:35.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\EmailSender\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\EmailSender\\IEmailSender.cs",
+              "RelativeToolTip": "LIbrary\\Services\\EmailSender\\IEmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:07:41.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:02:13.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReminderService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Reminder\\IReminderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T19:50:48.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BorrowBookController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\BorrowBookController.cs",
@@ -83,20 +253,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "ReturnBookController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\ReturnBookController.cs",
               "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
               "RelativeToolTip": "LIbrary\\Controllers\\ReturnBookController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T19:41:16.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "FineReadVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\ViewModels\\Fine\\FineReadVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\Fine\\FineReadVM.cs",
@@ -109,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Fine.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Models\\Fine.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Fine.cs",
@@ -122,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "FineService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\FineService.cs",
@@ -135,20 +305,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "FineController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\FineController.cs",
               "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
               "RelativeToolTip": "LIbrary\\Controllers\\FineController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwCYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T19:11:40.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "AppDbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Data\\AppDbInitializer.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\AppDbInitializer.cs",
@@ -161,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "IReturnBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\IReturnBookService.cs",
@@ -174,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "20240417192933_V2_RemovedNumberOfDays.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Migrations\\20240417192933_V2_RemovedNumberOfDays.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240417192933_V2_RemovedNumberOfDays.cs",
@@ -187,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "ReturnBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
@@ -200,20 +370,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Fines.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Fine\\Fines.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Fine\\Fines.cshtml",
               "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Views\\Fine\\Fines.cshtml",
               "RelativeToolTip": "LIbrary\\Views\\Fine\\Fines.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAAWAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAIBJwDQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-17T19:15:14.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "IFineService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\Services\\FineReader\\IFineService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\IFineService.cs",

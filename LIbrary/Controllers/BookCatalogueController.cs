@@ -2,6 +2,7 @@
 using LIbrary.Models;
 using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
+using LIbrary.Services.EmailSender;
 using LIbrary.Services.ReturnBook;
 using LIbrary.ViewModels.BookCatalogue;
 using Microsoft.AspNetCore.Authorization;
@@ -15,13 +16,16 @@ namespace LIbrary.Controllers
     {
         private readonly IBookCatalogueService _bookCatalogueService;
         private readonly IMapper _mapper;
-        public BookCatalogueController(IBookCatalogueService bookCatalogueService, IMapper mapper)
+        private readonly IEmailSender _emailSender;
+        public BookCatalogueController(IBookCatalogueService bookCatalogueService, IMapper mapper,IEmailSender emailSender)
         {
             _bookCatalogueService = bookCatalogueService;
             _mapper = mapper;
+            _emailSender = emailSender;
         }
         public async Task<IActionResult> Books(string searchString, string author,string genre,bool? available)
         {
+            await _emailSender.SendEmailAsync("samiellouze@hotmail.com", "testsubject", "testmessage");
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetAllBooksAsync();
             var bookReadVms = new List<BookReadVM>();

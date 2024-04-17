@@ -2,6 +2,7 @@ using LIbrary.Data;
 using LIbrary.Models;
 using LIbrary.Repository.Specific;
 using LIbrary.Services.BookCatalogue;
+using LIbrary.Services.EmailSender;
 using LIbrary.Services.FineReader;
 using LIbrary.Services.Payment;
 using LIbrary.Services.Profile;
@@ -9,8 +10,8 @@ using LIbrary.Services.Reminder;
 using LIbrary.Services.ReturnBook;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,8 @@ builder.Services.AddScoped<IReaderRepository, ReaderRepository>();
 builder.Services.AddScoped<IFineRepository, FineRepository>();
 builder.Services.AddScoped<IFineStatusRepository, FineStatusRepository>();
 #endregion
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 #region Service
 builder.Services.AddScoped<IBookCatalogueService, BookCatalogueService>();
