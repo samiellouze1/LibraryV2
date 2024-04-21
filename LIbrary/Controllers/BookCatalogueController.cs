@@ -5,6 +5,7 @@ using LIbrary.Services.BookCatalogue;
 using LIbrary.Services.EmailSender;
 using LIbrary.Services.ReturnBook;
 using LIbrary.ViewModels.BookCatalogue;
+using LIbrary.ViewModels.BorrowBook;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -99,6 +100,11 @@ namespace LIbrary.Controllers
             ViewBag.AuthorValue = author;
             ViewBag.AvailabilityValue = available;
             return View("Books",bookReadVms);
+        }
+        public async Task<IActionResult> BorrowedBooks (BorrowBookVM borrowBookVM)
+        {
+            //still needs implemntation
+            return View();
         }
         [Authorize(Roles ="Reader")]
         public async Task<IActionResult> ReturnedBooks(string searchString, string author, string genre, bool? available)

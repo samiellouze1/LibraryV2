@@ -1,4 +1,4 @@
-USE LibraryDB; -- Replace YourDatabaseName with the name of your database
+USE VehicleRentDB; -- Replace YourDatabaseName with the name of your database
 
 DECLARE @Sql NVARCHAR(MAX) = '';
 

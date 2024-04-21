@@ -1,14 +1,11 @@
 ﻿@using LIbrary.ViewModels.Auth;
 
-@model RegisterVM;
-
+@model RegisterVM
 
 <section class="contact_section layout_padding">
     <div class="container">
         <div class="heading_container">
-            <h2>
-                Register
-            </h2>
+            <h2>Register</h2>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -16,22 +13,27 @@
                     <form asp-action="Register" method="POST">
                         <div>
                             <input asp-for="Name" type="text" placeholder="Name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                         <div>
                             <input asp-for="Email" type="email" placeholder="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div>
-                            <input asp-for="imageUrl" type="text" id="imageUrlInput" placeholder="Photo URL" onchange="updateImage()" />
+                            <input asp-for="ImageUrl" type="text" id="imageUrlInput" placeholder="Photo URL" onchange="updateImage()" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
                         </div>
                         <div>
                             <input asp-for="Password" type="password" placeholder="Password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         <div>
                             <input asp-for="ConfirmationPassword" type="password" placeholder="Confirmation password" />
+                            <span asp-validation-for="ConfirmationPassword" class="text-danger"></span>
                         </div>
                         <div class="form-group d-flex align-items-center">
                             <div style="width:45px;">
-                                <input asp-for="rememberMe" type="checkbox">
+                                <input asp-for="RememberMe" type="checkbox">
                             </div>
                             <div style="margin-left:20px;">
                                 <h5 style="margin-bottom:22px;font-family:'Franklin Gothic Medium'">Remember me</h5>
@@ -40,6 +42,12 @@
                                 <button type="submit" class="btn btn-primary" style="margin-bottom:15px;">Register</button>
                             </div>
                         </div>
+                        @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["ErrorMessage"]
+                            </div>
+                        }
                     </form>
                 </div>
             </div>
@@ -68,4 +76,3 @@
         document.getElementById("photo_img").src = imageUrl;
     }
 </script>
-

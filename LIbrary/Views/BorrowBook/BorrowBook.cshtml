@@ -1,35 +1,35 @@
-﻿@using LIbrary.ViewModels.BorrowBook;
-@model BorrowBookVM;
+﻿@using LIbrary.ViewModels.BorrowBook
+@model BorrowBookVM
+
+
 
 <section class="contact_section layout_padding" style="text-align: center;">
     <div class="container">
         <div class="heading_container" style="justify-content: center; align-items: center;">
-            <h5>
-            </h5>
+            <h5></h5>
         </div>
 
         <div class="row">
             <div style="display: flex; justify-content: center; align-items: center; margin-left: 200px; margin-bottom: 50px;">
                 <div id="photo_visualization" style="width: auto; height: 350px; overflow: hidden; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
-                    <img id="photo_img" src=@Model.bookReadVM.coverUrl style="width: 100%; height: 100%; object-fit: cover;">
+                    <img id="photo_img" src="@Model.bookReadVM.coverUrl" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-
             </div>
             <div class="col-md-7" style="margin-top: 40px;">
                 <div class="form_container">
                     <form asp-controller="BorrowBook" asp-action="BorrowBook" id="borrowForm" method="POST">
                         <div style="display:flex;">
-                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; ">Great choice, fill in this information to proceed to checkout </h5>
+                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; ">Great choice, fill in this information to proceed to checkout</h5>
                         </div>
                         <div style="display:flex;">
-                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; margin-top:15px; ">Borrow Date </h5>
-                            <input id="borrowDate" asp-for ="startDate" type="date" placeholder="Date of Borrow" style="width:500px; margin-left:20px;" readonly />
+                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; margin-top:15px; ">Borrow Date</h5>
+                            <input id="borrowDate" asp-for="StartDate" type="date" placeholder="Date of Borrow" style="width:500px; margin-left:20px;" readonly />
                         </div>
                         <div style="display:flex;">
-                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; margin-top:15px; ">Return Date </h5>
-                            <input id="returnDate" type="date" placeholder="Date of Borrow" style="width:500px; margin-left:20px;" onchange="calculateTotal()" />
+                            <h5 style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium'; margin-top:15px; ">Return Date</h5>
+                            <input id="returnDate" asp-for="EndDate" type="date" placeholder="Date of Borrow" style="width:500px; margin-left:20px;" onchange="calculateTotal()" />
+                            <span asp-validation-for="EndDate" class="text-danger"></span>
                         </div>
-
                         <div class="form-group d-flex align-items-center justify-content-center">
                             <div id="totalDiv">
                                 <h5 id="total" style="margin-bottom: 22px; font-family: 'Franklin Gothic Medium';">Total $ @Model.bookReadVM.price X 5 days = $25</h5>
@@ -38,7 +38,6 @@
                                 <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Go to check out</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
@@ -46,14 +45,20 @@
     </div>
 </section>
 
-<script>
-    function calculateTotal() {
-        var borrowDate = new Date(document.getElementById('borrowDate').value);
-        var returnDate = new Date(document.getElementById('returnDate').value);
-        var pricePerDay = @Model.bookReadVM.price; // Assuming price is passed from the model
-        var numberOfDays = (returnDate - borrowDate) / (1000 * 60 * 60 * 24);
-        var total = pricePerDay * numberOfDays;
+@section scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 
-        document.getElementById('total').innerText = "Total $ " + pricePerDay + " X " + numberOfDays + " days = $" + total;
-    }
-</script>
+    <script>
+        function calculateTotal() {
+            var borrowDate = new Date($('#borrowDate').val());
+            var returnDate = new Date($('#returnDate').val());
+            var pricePerDay = parseFloat('@Model.bookReadVM.price'); // Assuming price is passed from the model
+            var numberOfDays = (returnDate - borrowDate) / (1000 * 60 * 60 * 24);
+            var total = pricePerDay * numberOfDays;
+
+            $('#total').text("Total $ " + pricePerDay + " X " + numberOfDays + " days = $" + total);
+        }
+    </script>
+}

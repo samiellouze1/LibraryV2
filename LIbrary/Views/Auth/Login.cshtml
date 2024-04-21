@@ -1,5 +1,5 @@
-﻿@using LIbrary.ViewModels.Auth;
-@model LoginVM;
+﻿@using LIbrary.ViewModels.Auth
+@model LoginVM
 
 <section class="contact_section layout_padding">
     <div class="container">
@@ -12,31 +12,41 @@
                     <form asp-action="Login" method="POST">
                         <div class="form-group">
                             <input asp-for="Email" type="email" placeholder="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <input asp-for="Password" type="password" placeholder="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         <div class="form-group d-flex align-items-center">
-                        <div style="width:45px;">
-                            <input asp-for="rememberMe" type="checkbox"></img>
+                            <div style="width:45px;">
+                                <input asp-for="RememberMe" type="checkbox">
+                            </div>
+                            <div style="margin-left:20px;">
+                                <h5 style="margin-bottom:22px;font-family:'Franklin Gothic Medium'">Remember me</h5>
+                            </div>
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
                         </div>
-                        <div style="margin-left:20px;">
-                            <h5 style="margin-bottom:22px;font-family:'Franklin Gothic Medium'">Remember me</h5>
-                        </div>
-                        <div class="ml-auto">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
-                        </div>
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @TempData["Error"]
+                            </div>
+                        }
+                        @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["ErrorMessage"]
+                            </div>
+                        }
                     </form>
                 </div>
                 <div style="display:flex; justify-content: center; align-items: center;">
-                    <h6>
-                        Don't have an account?
-                    </h6>
+                    <h6>Don't have an account?</h6>
                     <a asp-controller="Auth" asp-action="Register">
-                        <h6>
-                            &nbsp;  Register
-                        </h6>    
+                        <h6>&nbsp; Register</h6>
                     </a>
                 </div>
             </div>

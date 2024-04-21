@@ -49,8 +49,8 @@ namespace LIbrary.Services.ReturnBook
                 bookCopy = bookCopy,
                 reader = reader,
                 borrowItemStatus = borrowedStatus,
-                supposedEndDate = borrowBookVM.endDate,
-                startDate = borrowBookVM.startDate
+                supposedEndDate = borrowBookVM.EndDate,
+                startDate = borrowBookVM.StartDate
             };
 
             await _borrowItemRepository.AddAsync(borrowItem);

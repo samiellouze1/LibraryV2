@@ -32,8 +32,8 @@ namespace LIbrary.Controllers
             var borrowVM = new BorrowBookVM()
             {
                 bookReadVM = bookVM,
-                startDate = DateTime.Now,
-                endDate= DateTime.Now.AddDays(7)
+                StartDate = DateTime.Now,
+                EndDate= DateTime.Now.AddDays(7)
             };
             HttpContext.Session.SetString("BookId", bookId);
             return View(borrowVM);
@@ -54,22 +54,14 @@ namespace LIbrary.Controllers
             }
             else
             {
-                var duration = (borrowBookVM.endDate - borrowBookVM.startDate).Days;
+                var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
                 var amount = duration * borrowBookVM.bookReadVM.price;
-                var successUrl = Url.Action("BorrowedBooks", "BookCatalogue", null, Request.Scheme);
-                var cancelUrl = Url.Action("BorrowedBooks", "BookCatalogue", borrowBookVM, Request.Scheme);
+                var successUrl = Url.Action("BorroweBook", "BookCatalogue", borrowBookVM, Request.Scheme);
+                var cancelUrl = Url.Action("Index", "Home", new {message="You have cancelled your borrow"}, Request.Scheme);
                 var currency = "usd";
                 var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
                 return Redirect(session);
             }
         }
-        //[Authorize(Roles ="Reader")]
-        //[HttpPost]
-        //public async Task<IActionResult> BorrowBook(BorrowBookVM borrowVM)
-        //{
-        //    string Id = User.FindFirstValue("Id");
-        //    await _borrowBookService.BorrowBook(borrowVM, Id);
-        //    return RedirectToAction("Index", "Home");
-        //}
     }
 }
