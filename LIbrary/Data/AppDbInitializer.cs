@@ -42,7 +42,7 @@ namespace LIbrary.Data
                 #endregion
 
                 #region Book
-                if (!context.Book.Any()) 
+                if (!context.Book.Any())
                 {
                     #region covers
                     string cover1 = "https://strangerthansf.com/scans/asimov-foundation.jpg";
@@ -56,14 +56,14 @@ namespace LIbrary.Data
                     string cover9 = "https://i.harperapps.com/hcanz/covers/9780008433949/y648.jpg";
                     #endregion
                     #region author
-                    Author firstAuthor  = context.Author.FirstOrDefault(a => a.Id == "1");
-                    Author secondAuthor  = context.Author.FirstOrDefault(a => a.Id == "2");
-                    Author thirdAuthor  = context.Author.FirstOrDefault(a => a.Id == "3");
+                    Author firstAuthor = context.Author.FirstOrDefault(a => a.Id == "1");
+                    Author secondAuthor = context.Author.FirstOrDefault(a => a.Id == "2");
+                    Author thirdAuthor = context.Author.FirstOrDefault(a => a.Id == "3");
                     #endregion
                     #region genre
-                    Genre firstGenre = context.Genre.FirstOrDefault(g=>g.Id=="1");
-                    Genre secondGenre = context.Genre.FirstOrDefault(g=>g.Id=="2");
-                    Genre thirdGenre = context.Genre.FirstOrDefault(g=>g.Id=="3");
+                    Genre firstGenre = context.Genre.FirstOrDefault(g => g.Id == "1");
+                    Genre secondGenre = context.Genre.FirstOrDefault(g => g.Id == "2");
+                    Genre thirdGenre = context.Genre.FirstOrDefault(g => g.Id == "3");
                     #endregion
                     context.Book.AddRange(new List<Book>()
                     {
@@ -87,12 +87,12 @@ namespace LIbrary.Data
                 {
                     List<BookCopy> bookCopies = new List<BookCopy>();
                     int k = 0;
-                    for (int i=1; i < 10; i++)
+                    for (int i = 1; i < 10; i++)
                     {
-                        for (int j=1;j<3;j++)
+                        for (int j = 1; j < 3; j++)
                         {
                             k++;
-                            bookCopies.Add(new BookCopy() { Id = k.ToString(),book=context.Book.FirstOrDefault(b=>b.Id==i.ToString()) }) ;
+                            bookCopies.Add(new BookCopy() { Id = k.ToString(), book = context.Book.FirstOrDefault(b => b.Id == i.ToString()) });
                         }
                     }
                     context.BookCopy.AddRange(bookCopies);
@@ -149,42 +149,12 @@ namespace LIbrary.Data
                         new BorrowItem { Id = "2",  bookCopy = bookCopy2 ,borrowItemStatus=borrowedBorrowItemStatus,reader=reader3},
                         new BorrowItem { Id = "3",  bookCopy = bookCopy3,borrowItemStatus=borrowedBorrowItemStatus,reader=reader1},
                         new BorrowItem { Id = "4",  bookCopy = bookCopy1,borrowItemStatus=returnedBorrowItemStatus,reader=reader1,reviewRating=reviewRatingGood,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1)},
-                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad,startDate= new DateTime(2024,1,1),supposedEndDate=new DateTime(2024,2,1) ,endDate=  new DateTime(2024,3,1)},
-                        // Additional BorrowItems
-                        new BorrowItem { Id = "6",  bookCopy = bookCopy2 ,borrowItemStatus=returnedBorrowItemStatus,reader=reader2,reviewRating=reviewRatingGood,startDate= new DateTime(2024,2,1),supposedEndDate= new DateTime(2024,4,1),endDate= new DateTime(2024,3,15)},
-                        new BorrowItem { Id = "7",  bookCopy = bookCopy3 ,borrowItemStatus=returnedBorrowItemStatus,reader=reader1,reviewRating=reviewRatingBad,startDate= new DateTime(2024,2,1),supposedEndDate= new DateTime(2024,3,15),endDate= new DateTime(2024,4,1)}
+                        new BorrowItem { Id = "5",  bookCopy = bookCopy1, borrowItemStatus=returnedBorrowItemStatus,reader=reader3,reviewRating=reviewRatingBad,startDate= new DateTime(2024,1,1),supposedEndDate= new DateTime(2024,3,1),endDate= new DateTime(2024,2,1) }
                     });
                     context.SaveChanges();
                 }
                 #endregion
 
-                #region FineStatus
-                if (!context.FineStatus.Any() )
-                {
-                    context.FineStatus.AddRange(new List<FineStatus>()
-                    {
-                        new FineStatus { Id = "1",status=false}, //not paid
-                        new FineStatus { Id = "2",status=true} //paid
-                    });
-                    context.SaveChanges();
-                }
-                #endregion
-
-                #region Fine
-                if (!context.Fine.Any())
-                {
-                    BorrowItem borrowItem5 = context.BorrowItem.FirstOrDefault(bi => bi.Id == "5");
-                    FineStatus fineStatusNotPaid = context.FineStatus.FirstOrDefault(fs => fs.Id == "1");
-                    context.Fine.AddRange(new List<Fine>()
-                    {
-                        new Fine { Id = "1", borrowItem=borrowItem5,fineStatus=fineStatusNotPaid },
-                        // Additional fines
-                        new Fine { Id = "2", borrowItem=context.BorrowItem.FirstOrDefault(bi=>bi.Id=="6"),fineStatus=fineStatusNotPaid },
-                        new Fine { Id = "3", borrowItem=context.BorrowItem.FirstOrDefault(bi=>bi.Id=="7"),fineStatus=fineStatusNotPaid }
-                    });
-                    context.SaveChanges();
-                }
-                #endregion
             }
         }
         public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationbuilder)
@@ -203,8 +173,8 @@ namespace LIbrary.Data
                 var reader = await userManager.FindByEmailAsync(readerEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id="1",UserName = readerEmail, Email = readerEmail ,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/120645766_3263034770470903_6610932504759370937_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MjAGUgxoQTEAb7cbh1m&_nc_ht=scontent.ftun14-1.fna&oh=00_AfCUhyYkS6raLADU1zRYHzz_eWuO9wkW5gi3Hon2KylK3Q&oe=663BE137",JoinedOn=DateTime.Now,Name="Sami" };
-                    await userManager.CreateAsync(newReader,"Reader123@");
+                    Reader newReader = new Reader() { Id = "1", UserName = readerEmail, Email = readerEmail, ImageUrl = "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/120645766_3263034770470903_6610932504759370937_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MjAGUgxoQTEAb7cbh1m&_nc_ht=scontent.ftun14-1.fna&oh=00_AfCUhyYkS6raLADU1zRYHzz_eWuO9wkW5gi3Hon2KylK3Q&oe=663BE137" };
+                    await userManager.CreateAsync(newReader, "Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }
                 //reader 2
@@ -212,7 +182,7 @@ namespace LIbrary.Data
                 var secondaryreader = await userManager.FindByEmailAsync(secondaryreaderEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id = "2", UserName = secondaryreaderEmail, Email = secondaryreaderEmail, ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t39.30808-6/289057250_4012267192331843_3921978455873349113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jxNEaQzp_J4Ab50NQx9&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDbLK4fp7BhyfqQLJZF6xA1_Eb-l3wFmBL3YYzu4VKGWg&oe=661A58A0",JoinedOn=DateTime.Now,Name="Issam" };
+                    Reader newReader = new Reader() { Id = "2", UserName = secondaryreaderEmail, Email = secondaryreaderEmail, ImageUrl = "https://scontent.ftun14-1.fna.fbcdn.net/v/t39.30808-6/289057250_4012267192331843_3921978455873349113_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jxNEaQzp_J4Ab50NQx9&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDbLK4fp7BhyfqQLJZF6xA1_Eb-l3wFmBL3YYzu4VKGWg&oe=661A58A0" };
                     await userManager.CreateAsync(newReader, "Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }
@@ -221,7 +191,7 @@ namespace LIbrary.Data
                 var thirdreader = await userManager.FindByEmailAsync(thirdreaderEmail);
                 if (reader == null)
                 {
-                    Reader newReader = new Reader() { Id = "3", UserName = thirdreaderEmail, Email = thirdreaderEmail,ImageUrl= "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/48425571_2673113052706647_5301663967544868864_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zfKDpEP7snsAb7WtfLM&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDYXePutyDaK2AJy6SE7f52odaz30f1jbkl2h3g_TTSAA&oe=663BF816", JoinedOn = DateTime.Now,Name="Hsan" };
+                    Reader newReader = new Reader() { Id = "3", UserName = thirdreaderEmail, Email = thirdreaderEmail, ImageUrl = "https://scontent.ftun14-1.fna.fbcdn.net/v/t1.6435-9/48425571_2673113052706647_5301663967544868864_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zfKDpEP7snsAb7WtfLM&_nc_ht=scontent.ftun14-1.fna&oh=00_AfDYXePutyDaK2AJy6SE7f52odaz30f1jbkl2h3g_TTSAA&oe=663BF816" };
                     await userManager.CreateAsync(newReader, "Reader123@");
                     await userManager.AddToRoleAsync(newReader, UserRoles.Reader);
                 }

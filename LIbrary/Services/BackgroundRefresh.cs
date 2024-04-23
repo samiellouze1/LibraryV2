@@ -3,34 +3,26 @@ using LIbrary.Services.Reminder;
 
 namespace LIbrary.Services
 {
-    public class BackgroundRefresh : IHostedService, IDisposable
+    public class BackgroundRefresh : BackgroundService
     {
-        private Timer? _timer;
-        private readonly IServiceProvider _serviceProvider;
+        private readonly IServiceProvider _services;
 
-        public BackgroundRefresh(IServiceProvider serviceProvider)
+        public BackgroundRefresh(IServiceProvider services)
         {
-            _serviceProvider = serviceProvider;
+            _services = services;
         }
 
-        public Task StartAsync(CancellationToken cancellationToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            using (var scope = _serviceProvider.CreateScope())
+            while (!stoppingToken.IsCancellationRequested)
             {
-                var scopedService = scope.ServiceProvider.GetRequiredService<IReminderService>();
-                _timer = new Timer(state => scopedService.SendEmails().Wait(), null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
-                return Task.CompletedTask;
+                using (var scope = _services.CreateScope())
+                {
+                    var scopedService = scope.ServiceProvider.GetRequiredService<IReminderService>();
+                    await scopedService.SendEmails();
+                }
+                await Task.Delay(TimeSpan.FromHours(2), stoppingToken);
             }
-        }
-
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            _timer?.Change(Timeout.Infinite, 0);
-            return Task.CompletedTask;
-        }
-        public void Dispose()
-        {
-            _timer?.Dispose();
         }
     }
 }

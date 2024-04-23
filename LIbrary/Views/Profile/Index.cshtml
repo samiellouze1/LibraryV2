@@ -1,5 +1,6 @@
 ﻿@using LIbrary.ViewModels.Profile;
 @model ProfileReadVM;
+
 <section class="client_section" style="justify-content:center;">
     <div class="container">
         <div class="product_heading" style="margin-bottom:0px;">
@@ -16,7 +17,7 @@
                         <div class="col-md-10 mx-auto">
                             <div class="box" style="width:1200px;">
                                 <div class="img-box" style="margin-bottom: 300px;">
-                                    <img src=@Model.ImageUrl alt="">
+                                    <img src="@Model.ImageUrl" alt="">
                                 </div>
                                 <div class="detail-box" style="width:1000px; height: 500px; ">
                                     <div class="client_info">
@@ -30,32 +31,33 @@
                                             <h6>
                                                 Joined the platform on @Model.JoinedOn.ToString("yyyy-MM-dd")
                                             </h6>
-
                                         </div>
-                                        <div class="client_name"">
-                                            <h6>Books in posession</h6>
+                                        <div class="client_name">
+                                            <h6>Books in possession</h6>
                                             <h5>@Model.numberOfBooksInposession</h5>
                                             <h6>Returned Books</h6>
                                             <h5>@Model.numberOfBorrowedBooks</h5>
                                         </div>
                                     </div>
-                                @if (Model.books.Count > 0)
-                                {
-                                    <div style="margin-top:25px; display:flex; justify-content:center;" >
-                                        @foreach (var item in Model.books)
-                                        {
-                                            <a asp-controller="BookCatalogue" asp-action="BorrowedBooks">
-                                                <img src=@item.coverUrl style="width: 150px; height: 250px; margin-right: 10px;" />
-                                            </a>
-                                        }
+                                    @if (Model.books.Count > 0)
+                                    {
+                                        <div style="margin-top:25px; display:flex; justify-content:center;">
+                                            @foreach (var item in Model.books)
+                                            {
+                                                <a asp-controller="BookCatalogue" asp-action="Book" asp-route-bookId="@item.Id">
+                                                    <img src="@item.coverUrl" style="width: 150px; height: 250px; margin-right: 10px;" />
+                                                </a>
+                                            }
+                                        </div>
+                                    }
+                                    <div class="product_heading" style="margin-top:25px;justify-content:center;align-items:center;">
+                                        <a asp-action="ReturnedBooks" asp-controller="BookCatalogue">
+                                            <h2 style="background-color: #1B3A3A;text-align:center;">
+                                                Book History
+                                            </h2>
+                                        </a>
                                     </div>
-                                    <div class="product_heading" style="margin-top:25px;align-content:right;justify-content:center;align-items:center;">
-                                        <h2 style="background-color: #1B3A3A;text-align:center;">
-                                            Book History
-                                        </h2>
-                                    </div>
-                                }
-                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>

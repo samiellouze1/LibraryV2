@@ -1,6 +1,7 @@
 using LIbrary.Data;
 using LIbrary.Models;
 using LIbrary.Repository.Specific;
+using LIbrary.Services;
 using LIbrary.Services.BookCatalogue;
 using LIbrary.Services.EmailSender;
 using LIbrary.Services.FineReader;
@@ -56,7 +57,7 @@ builder.Services.AddScoped<IProfileService,ProfileService>();
 #endregion
 
 #region hosted service
-//builder.Services.AddHostedService<BackgroundRefresh>();
+builder.Services.AddHostedService<BackgroundRefresh>();
 #endregion
 
 #region AutoMapper
