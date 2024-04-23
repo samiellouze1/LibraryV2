@@ -4989,11 +4989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\LIbrary.csproj",
       "projectName": "LIbrary",
-      "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\LIbrary.csproj",
+      "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\LIbrary.csproj",
       "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET Core\\LIbrary\\LIbrary\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",

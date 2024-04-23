@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LIbrary
 build_property.RootNamespace = LIbrary
-build_property.ProjectDir = C:\Users\ThinkPad\source\repos\.NET Core\LIbrary\LIbrary\
+build_property.ProjectDir = C:\Users\ThinkPad\source\repos\.NET\LIbrary\LIbrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\ThinkPad\source\repos\.NET Core\LIbrary\LIbrary
+build_property.MSBuildProjectDirectory = C:\Users\ThinkPad\source\repos\.NET\LIbrary\LIbrary
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Auth/Login.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Auth/Register.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/BookCatalogue/Book.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/BookCatalogue/Book.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGFsb2d1ZVxCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/BookCatalogue/Books.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/BookCatalogue/Books.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0NhdGFsb2d1ZVxCb29rcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/BorrowBook/BorrowBook.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/BorrowBook/BorrowBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93Qm9va1xCb3Jyb3dCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Fine/Fines.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Fine/Fines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluZVxGaW5lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Home/Index.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Payment/Cancel.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Payment/Cancel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxDYW5jZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Payment/Success.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Payment/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Profile/Index.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/ReturnBook/ReturnBook.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/ReturnBook/ReturnBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuQm9va1xSZXR1cm5Cb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Shared/Error.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/_ViewImports.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/_ViewStart.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ThinkPad/source/repos/.NET Core/LIbrary/LIbrary/Views/Shared/_Layout.cshtml]
+[C:/Users/ThinkPad/source/repos/.NET/LIbrary/LIbrary/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cm3pqy03rg

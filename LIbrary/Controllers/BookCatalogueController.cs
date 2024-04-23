@@ -101,11 +101,6 @@ namespace LIbrary.Controllers
             ViewBag.AvailabilityValue = available;
             return View("Books",bookReadVms);
         }
-        public async Task<IActionResult> BorrowedBooks (BorrowBookVM borrowBookVM)
-        {
-            //still needs implemntation
-            return View();
-        }
         [Authorize(Roles ="Reader")]
         public async Task<IActionResult> ReturnedBooks(string searchString, string author, string genre, bool? available)
         {
