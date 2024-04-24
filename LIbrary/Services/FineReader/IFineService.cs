@@ -6,5 +6,6 @@ namespace LIbrary.Services.FineReader
     {
         public Task<List<Fine>> GetFines(string readerId);
         public Task<Fine> GetFineByIdAsync(string id);
+        Task DeleteFine(string fineId);
     }
 }

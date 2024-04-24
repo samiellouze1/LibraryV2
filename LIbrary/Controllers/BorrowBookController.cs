@@ -40,33 +40,63 @@ namespace LIbrary.Controllers
         }
         [Authorize(Roles = "Reader")]
         [HttpPost]
-        public async Task<IActionResult> BorrowBook(BorrowBookVM borrowBookVM)//string amount)
+        public async Task<IActionResult> BorrowBook(BorrowBookVM borrowBookVM)
         {
-            var bookId = HttpContext.Session.GetString("BookId");
-            var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
-            var bookVM = _mapper.Map<BookReadVM>(book);
-            borrowBookVM.bookReadVM = bookVM;
-            if (!ModelState.IsValid)
+            try
             {
-                ///check for goddamn errors
+                if (!ModelState.IsValid)
+                {
+                    var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
 
-                return View(borrowBookVM);
+                    // Log or handle the errors as needed
+                    foreach (var error in errors)
+                    {
+                        // You can log the errors, display them to the user, or handle them in any other appropriate way
+                        // For example, you can use TempData to display error messages on the next request
+                        Console.WriteLine(error);
+                    }
+                    // Model validation failed, return the view with validation errors
+                    return View(borrowBookVM);
+                }
+                else
+                {
+                    // Ensure that BookId is not null or empty
+                    var bookId = HttpContext.Session.GetString("BookId");
+                    var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
+
+                    // Calculate amount and proceed to payment
+                    var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
+                    var amount = duration * book.price;
+                    var successUrl = Url.Action("SuccessBorrowBook", "BorrowBook",new { startDate= borrowBookVM.StartDate, endDate =borrowBookVM.EndDate, bookId= bookId }, Request.Scheme);
+                    var cancelUrl = Url.Action("Index", "Home", null, Request.Scheme);
+                    var currency = "usd";
+
+                    // Create checkout session
+                    var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
+                    return Redirect(session);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
-                var amount = duration * borrowBookVM.bookReadVM.price;
-                var successUrl = Url.Action("SuccessBorrowBook", "BorrowBook", borrowBookVM, Request.Scheme);
-                var cancelUrl = Url.Action("Index", "Home", new {message="You have cancelled your borrow"}, Request.Scheme);
-                var currency = "usd";
-                var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
-                return Redirect(session);
+                // Log the exception
+                // Handle the exception gracefully, maybe display an error message to the user
+                return RedirectToAction("Error", "Home"); // Redirect to an error page
             }
         }
-        public IActionResult SuccessBorrowBook(BorrowBookVM borrowBookVM)
+
+        public async Task<IActionResult> SuccessBorrowBook(DateTime startDate, DateTime endDate, string bookId)
         {
-            //needs implementation
-            return View();
+            var Id = User.FindFirstValue("Id");
+            var book = await _bookCatalogueService.GetBookByIdAsync(Id);
+            var bookReadVM = _mapper.Map<BookReadVM>(book); 
+            var borrowBookVM = new BorrowBookVM()
+            {
+                StartDate = startDate,
+                EndDate = endDate,
+                bookReadVM = bookReadVM
+            };
+            await _borrowBookService.BorrowBook(borrowBookVM, Id);
+            return RedirectToAction("BorrowedBooks","BookCatalogue");
         }
     }
 }

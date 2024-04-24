@@ -24,5 +24,10 @@ namespace LIbrary.Services.FineReader
             var fine = await _fineRepository.GetEagerFineByIdAsync(fineId);
             return fine;
         }
+
+        public async Task DeleteFine(string fineId)
+        {
+            await _fineRepository.DeleteAsync(fineId);
+        }
     }
 }

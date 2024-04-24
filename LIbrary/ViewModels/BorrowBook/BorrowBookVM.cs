@@ -5,8 +5,7 @@ namespace LIbrary.ViewModels.BorrowBook
 {
     public class BorrowBookVM
     {
-        [Required(ErrorMessage = "The BookReadVM field is required.")]
-        public BookReadVM bookReadVM { get; set; }
+        public BookReadVM? bookReadVM { get; set; }
 
         [Display(Name = "Start Date")]
         [DataType(DataType.Date)]

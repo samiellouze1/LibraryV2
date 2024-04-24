@@ -161,6 +161,7 @@ namespace LIbrary.Migrations
             modelBuilder.Entity("LIbrary.Models.Fine", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("borrowItemId")
@@ -494,7 +495,8 @@ namespace LIbrary.Migrations
 
                     b.HasOne("LIbrary.Models.Fine", "fine")
                         .WithOne("borrowItem")
-                        .HasForeignKey("LIbrary.Models.BorrowItem", "fineId");
+                        .HasForeignKey("LIbrary.Models.BorrowItem", "fineId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("LIbrary.Models.Reader", "reader")
                         .WithMany("borrowItems")

@@ -17,13 +17,18 @@ namespace LIbrary.Services.Reminder
             var borrowitems = await _borrowItemRepository.GetAllEagerBorrowItems();
             foreach (var borrowitem in borrowitems)
             {
-                if (borrowitem.borrowItemStatusId=="1" && (DateTime.Now - borrowitem.supposedEndDate).Days<1)
+                if (borrowitem.borrowItemStatusId=="1" && ( borrowitem.supposedEndDate - DateTime.Now).Days<1)
                 {
                     var reader = borrowitem.reader;
-                    await _emailSender.SendEmailAsync(reader.UserName, "Reminder to return book" + borrowitem.bookCopy.book.title, "You need to return your book in less than one day");
+                    await _emailSender.SendEmailAsync(
+                        reader.UserName,
+                        "Reminder to return book "
+                        + borrowitem.bookCopy.book.title,
+                        "You need to return your book in less than one day.");
+
                 }
             }
-            Console.WriteLine("ziw ziw");
+            Console.WriteLine("Completed a reminder");
         }
     }
 }

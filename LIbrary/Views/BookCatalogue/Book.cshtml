@@ -82,24 +82,28 @@
                                         You are currently borrowing this book 
                                     </h2>
                                 </div>
-                                <div class="product_heading" >
-                                    <h2 style="background-color:#640c0a">
-                                        Return book
-                                    </h2>
-                                </div>
+                                <a asp-action="ReturnBook" asp-controller="ReturnBook" asp-route-bookId=@Model.Id>
+                                    <div class="product_heading" >
+                                        <h2 style="background-color:#640c0a">
+                                            Return book
+                                        </h2>
+                                    </div>
+                                </a>
                             }
                             else if (Model.isAlreadyBorrowed)
                             {
                                 <div class="product_heading" >
-                                    <h2 style="background-color:#9f7746">
+                                    <h2 style="background-color:#640c0a">
                                         You did borrow this before
                                     </h2>
                                 </div>
-                                <div class="product_heading" >
-                                    <h2 style="background-color:#640c0a">
-                                        Borrow this again
-                                    </h2>
-                                </div>
+                                <a asp-action="BorrowBook" asp-controller="BorrowBook" asp-route-id=@Model.Id>
+                                    <div class="product_heading" >
+                                        <h2 style="background-color:#9f7746">
+                                            Borrow this again
+                                        </h2>
+                                    </div>
+                                </a>
                             }
                             else
                             {
@@ -108,11 +112,13 @@
                                         You did not borrow this before
                                     </h2>
                                 </div>
-                                <div class="product_heading" >
-                                     <h2 style="background-color:#640c0a">
-                                        Borrow
-                                    </h2>
-                                </div>
+                                <a asp-action="BorrowBook" asp-controller="BorrowBook" asp-route-bookId=@Model.Id>
+                                    <div class="product_heading" >
+                                        <h2 style="background-color:#9f7746">
+                                            Borrow
+                                        </h2>
+                                    </div>
+                                </a>
                             }
                         }
                         else
@@ -122,11 +128,13 @@
                                     You are currently logged out
                                 </h2>
                             </div>
-                            <div class="product_heading" >
-                                <h2 style="background-color:#640c0a">
-                                    Login to borrow this book
-                                </h2>
-                            </div>
+                            <a asp-action="Login" asp-controller="Auth">
+                                <div class="product_heading" >
+                                    <h2 style="background-color:#9f7746">
+                                        Login to borrow this book
+                                    </h2>
+                                </div>
+                            </a>
                         }
                         </div>
                     </div>

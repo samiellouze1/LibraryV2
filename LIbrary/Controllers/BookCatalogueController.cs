@@ -26,7 +26,7 @@ namespace LIbrary.Controllers
         }
         public async Task<IActionResult> Books(string searchString, string author,string genre,bool? available)
         {
-            await _emailSender.SendEmailAsync("samiellouze@hotmail.com", "testsubject", "testmessage");
+            //await _emailSender.SendEmailAsync("samiellouze@hotmail.com", "testsubject", "testmessage");
             string Id = User.FindFirstValue("Id");
             var books = await _bookCatalogueService.GetAllBooksAsync();
             var bookReadVms = new List<BookReadVM>();
