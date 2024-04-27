@@ -81,25 +81,25 @@
                     <a asp-controller="BookCatalogue" asp-action="Book" asp-route-bookId=@item.Id>
                         <div class="img-box" style="margin-top:5px;margin-bottom:15px;height:330px;">
                                 <img src="@item.coverUrl" alt="Click to go to page">
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                @if (item.numberOfCopies == 0)
+                                @if (User.Identity.IsAuthenticated)
                                 {
-                                    <span class="label not-available-label">No available copies</span>
+                                    @if (item.numberOfCopies == 0)
+                                    {
+                                        <span class="label not-available-label">No available copies</span>
+                                    }
+                                    else if (item.numberOfCopies == 1)
+                                    {
+                                        <span class="label available-label">@item.numberOfCopies available copy</span>
+                                    }
+                                    else 
+                                    {
+                                        <span class="label available-label">@item.numberOfCopies available copies</span>
+                                    }
                                 }
-                                else if (item.numberOfCopies == 1)
+                                else
                                 {
-                                    <span class="label available-label">@item.numberOfCopies available copy</span>
+                                    <span class="label maybe-available-label">Login</span>
                                 }
-                                else 
-                                {
-                                    <span class="label available-label">@item.numberOfCopies available copies</span>
-                                }
-                            }
-                            else
-                            {
-                                <span class="label maybe-available-label">Login</span>
-                            }
                                 
                         </div>
                     </a>
