@@ -38,7 +38,7 @@ namespace LIbrary.Controllers
             var cancelUrl = Url.Action("PayFineSuccess", "Fine", new {fineId = fineId}, Request.Scheme);
             var successUrl = Url.Action("Fines", "Fine", null, Request.Scheme);
             var currency = "usd";
-            var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
+            var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl,"fine "+fineId.ToString());
             return Redirect(session);
         }
         public async Task<IActionResult> PayFineSuccess(string fineId)

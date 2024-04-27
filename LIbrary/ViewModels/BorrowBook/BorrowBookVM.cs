@@ -10,7 +10,7 @@ namespace LIbrary.ViewModels.BorrowBook
         [Display(Name = "Start Date")]
         [DataType(DataType.Date)]
         [Required(ErrorMessage = "The Start Date field is required.")]
-        public DateTime StartDate { get; set; } = DateTime.Now;
+        public DateTime StartDate { get; set; } = DateTime.Today;
 
         [Display(Name = "End Date")]
         [DataType(DataType.Date)]

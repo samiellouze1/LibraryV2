@@ -36,7 +36,7 @@ namespace LIbrary.Services.ReturnBook
             var borrowItem = borrowItems.FirstOrDefault(bi => bi.readerId == readerId);
             if (borrowItem != null)
             {
-                var returnDate = DateTime.Now;
+                var returnDate = DateTime.Today;
                 var returnedBorrowItemStatus = await _borrowItemStatusRepository.GetByIdAsync("2");
                 borrowItem.endDate = returnDate;
                 borrowItem.borrowItemStatus = returnedBorrowItemStatus;

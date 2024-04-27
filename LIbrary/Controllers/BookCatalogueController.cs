@@ -44,7 +44,6 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
-            bookReadVms = Filter(bookReadVms,searchString,author,genre,available);
             ViewBag.Title = "Browse Books";
             ViewBag.Redirect = "Books";
             ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
@@ -52,6 +51,7 @@ namespace LIbrary.Controllers
             ViewBag.GenreValue = genre;
             ViewBag.AuthorValue = author;
             ViewBag.AvailabilityValue = available;
+            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             return View(bookReadVms);
         }
         public async Task<IActionResult> Book(string bookId)
@@ -91,7 +91,6 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
-            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             ViewBag.Title = "Borrowed Books";
             ViewBag.Redirect = "BorrowedBooks";
             ViewBag.Genres = bookReadVms.Select(b => b.genreName).Distinct().ToList();
@@ -99,6 +98,7 @@ namespace LIbrary.Controllers
             ViewBag.GenreValue = genre;
             ViewBag.AuthorValue = author;
             ViewBag.AvailabilityValue = available;
+            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             return View("Books",bookReadVms);
         }
         [Authorize(Roles ="Reader")]
@@ -121,7 +121,6 @@ namespace LIbrary.Controllers
                     bookReadVms.Add(bookReadVm);
                 }
             }
-            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             ViewBag.Title = "Returned Books";
             ViewBag.Redirect = "ReturnedBooks";
             ViewBag.Genres = bookReadVms.Select(b=>b.genreName).Distinct().ToList();
@@ -129,6 +128,7 @@ namespace LIbrary.Controllers
             ViewBag.GenreValue = genre;
             ViewBag.AuthorValue = author;
             ViewBag.AvailabilityValue = available;
+            bookReadVms = Filter(bookReadVms, searchString, author, genre, available);
             return View("Books",bookReadVms);
         }
         public List<BookReadVM> Filter(List<BookReadVM> bookReadVMs, string searchString, string author, string genre, bool? available)

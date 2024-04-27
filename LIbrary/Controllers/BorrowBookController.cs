@@ -32,8 +32,8 @@ namespace LIbrary.Controllers
             var borrowVM = new BorrowBookVM()
             {
                 bookReadVM = bookVM,
-                StartDate = DateTime.Now,
-                EndDate= DateTime.Now.AddDays(7)
+                StartDate = DateTime.Today,
+                EndDate= DateTime.Today.AddDays(7)
             };
             HttpContext.Session.SetString("BookId", bookId);
             return View(borrowVM);
@@ -72,7 +72,7 @@ namespace LIbrary.Controllers
                     var currency = "usd";
 
                     // Create checkout session
-                    var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl);
+                    var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl,book.title);
                     return Redirect(session);
                 }
             }

@@ -17,7 +17,7 @@ namespace LIbrary.Services.Reminder
             var borrowitems = await _borrowItemRepository.GetAllEagerBorrowItems();
             foreach (var borrowitem in borrowitems)
             {
-                if (borrowitem.borrowItemStatusId=="1" && ( borrowitem.supposedEndDate - DateTime.Now).Days<1)
+                if (borrowitem.borrowItemStatusId=="1" && ( borrowitem.supposedEndDate - DateTime.Today).Days<1)
                 {
                     var reader = borrowitem.reader;
                     await _emailSender.SendEmailAsync(
