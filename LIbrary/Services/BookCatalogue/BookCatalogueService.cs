@@ -56,7 +56,7 @@ namespace LIbrary.Services.BookCatalogue
             }
 
 
-            return validatedbookcopies.SelectMany(vc=>vc.book).Distinct().ToList();
+            return validatedbookcopies.Select(vc=>vc.book).Distinct().ToList();
         }
 
         public async Task<List<Book>> GetReturnedBooksByReaderIdAsync(string id)
