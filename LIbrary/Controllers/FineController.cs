@@ -35,8 +35,8 @@ namespace LIbrary.Controllers
             var fine = await _fineService.GetFineByIdAsync(fineId);
             var duration = (fine.borrowItem.endDate - fine.borrowItem.supposedEndDate).Days;
             var amount = duration * 2 * fine.borrowItem.bookCopy.book.price ;
-            var cancelUrl = Url.Action("PayFineSuccess", "Fine", new {fineId = fineId}, Request.Scheme);
-            var successUrl = Url.Action("Fines", "Fine", null, Request.Scheme);
+            var successUrl = Url.Action("PayFineSuccess", "Fine", new {fineId = fineId}, Request.Scheme);
+            var cancelUrl = Url.Action("Fines", "Fine", null, Request.Scheme);
             var currency = "usd";
             var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl,"fine "+fineId.ToString());
             return Redirect(session);
