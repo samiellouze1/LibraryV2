@@ -92,7 +92,8 @@ namespace LIbrary.Controllers
                         {
                             Name = registervm.Name,
                             UserName = registervm.Email,
-                            Email = registervm.Email
+                            Email = registervm.Email,
+                            ImageUrl=registervm.ImageUrl
                         };
                         var newUserResponse = await _userManager.CreateAsync(newUser, registervm.Password);
                         if (newUserResponse.Succeeded)

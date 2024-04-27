@@ -43,12 +43,20 @@ namespace LIbrary.Services.BookCatalogue
                 throw new ArgumentException("Reader ID cannot be null or empty", nameof(id));
 
             var reader = await _readerRepository.GetEagerReaderByIdAsync(id);
-            var books = reader?.borrowItems
-                .Where(bi => bi.borrowItemStatusId == "1")
-                .Select(r => r.bookCopy?.book)
-                .ToList() ?? new List<Book>();
+            var bookcopies = reader.borrowItems.Select(bi => bi.bookCopy);
+            var validatedbookcopies = new List<BookCopy>();
+            foreach (var bookCopy in bookcopies)
+            {
+                var renatls = bookCopy.borrowItems.Select(bi => bi.borrowItemStatusId);
+                var validate = renatls.Any(r=>r=="1");
+                if (validate)
+                {
+                    validatedbookcopies.Add(bookCopy);
+                }
+            }
 
-            return books;
+
+            return validatedbookcopies.SelectMany(vc=>vc.book).Distinct().ToList();
         }
 
         public async Task<List<Book>> GetReturnedBooksByReaderIdAsync(string id)
@@ -57,12 +65,20 @@ namespace LIbrary.Services.BookCatalogue
                 throw new ArgumentException("Reader ID cannot be null or empty", nameof(id));
 
             var reader = await _readerRepository.GetEagerReaderByIdAsync(id);
-            var books = reader?.borrowItems
-                .Where(bi => bi.borrowItemStatusId == "2")
-                .Select(r => r.bookCopy?.book)
-                .ToList() ?? new List<Book>();
+            var bookcopies = reader.borrowItems.Select(bi => bi.bookCopy);
+            var validatedbookcopies = new List<BookCopy>();
+            foreach (var bookCopy in bookcopies)
+            {
+                var renatls = bookCopy.borrowItems.Select(bi => bi.borrowItemStatusId);
+                var validate = renatls.Any(r => r == "2");
+                if (validate)
+                {
+                    validatedbookcopies.Add(bookCopy);
+                }
+            }
 
-            return books;
+
+            return validatedbookcopies.Select(vc => vc.book).Distinct().ToList();
         }
         public bool IsAlreadyBorrowed(Book book, string readerId)
         {

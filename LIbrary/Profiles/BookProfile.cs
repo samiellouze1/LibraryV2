@@ -27,7 +27,7 @@ public class BookProfile : Profile
         var num = 0;
         foreach (var bookCopy in book.bookCopies)
         {
-            bool testAvailable = !bookCopy.borrowItems.Select(bi => bi.borrowItemStatusId).Any(bi => bi == "1");
+            bool testAvailable = !bookCopy.borrowItems.Select(bi => bi.borrowItemStatusId).Any(bi => bi == "1" || bi==null);
             if (testAvailable)
             {
                 num++;

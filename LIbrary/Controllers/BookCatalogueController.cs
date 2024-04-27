@@ -113,7 +113,7 @@ namespace LIbrary.Controllers
             }
             else
             {
-                foreach (Book book in books)
+                foreach (Book book in books.Distinct())
                 {
                     var bookReadVm = _mapper.Map<BookReadVM>(book);
                     bookReadVm.isAlreadyBorrowed = _bookCatalogueService.IsAlreadyBorrowed(book, Id);

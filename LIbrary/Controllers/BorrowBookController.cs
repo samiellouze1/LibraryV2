@@ -67,8 +67,8 @@ namespace LIbrary.Controllers
                     // Calculate amount and proceed to payment
                     var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
                     var amount = duration * book.price;
-                    var successUrl = Url.Action("SuccessBorrowBook", "BorrowBook",new { startDate= borrowBookVM.StartDate, endDate =borrowBookVM.EndDate, bookId= bookId }, Request.Scheme);
-                    var cancelUrl = Url.Action("Index", "Home", null, Request.Scheme);
+                    var cancelUrl = Url.Action("SuccessBorrowBook", "BorrowBook",new { startDate= borrowBookVM.StartDate, endDate =borrowBookVM.EndDate, bookId= bookId }, Request.Scheme);
+                    var successUrl = Url.Action("Index", "Home", null, Request.Scheme);
                     var currency = "usd";
 
                     // Create checkout session
