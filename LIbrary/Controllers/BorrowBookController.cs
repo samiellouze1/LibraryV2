@@ -87,7 +87,7 @@ namespace LIbrary.Controllers
         public async Task<IActionResult> SuccessBorrowBook(DateTime startDate, DateTime endDate, string bookId)
         {
             var Id = User.FindFirstValue("Id");
-            var book = await _bookCatalogueService.GetBookByIdAsync(Id);
+            var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
             var bookReadVM = _mapper.Map<BookReadVM>(book); 
             var borrowBookVM = new BorrowBookVM()
             {
