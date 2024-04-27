@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\payment\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\payment\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\backgroundrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\returnbook\\returnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\services\\returnbook\\returnbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\borrowbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\reminder\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Migrations\\20240424215634_V1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIbrary\\Migrations\\20240424215634_V1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|solutionrelative:library\\controllers\\finecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F59E98A-A9BD-4C0C-8D7D-805DDAE46E1E}|LIbrary\\LIbrary.csproj|c:\\users\\thinkpad\\source\\repos\\.net\\library\\library\\services\\finereader\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -210,7 +218,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 468,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -222,7 +230,108 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Payment\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:46:30.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Payment\\PaymentService.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\Payment\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Payment\\PaymentService.cs",
+              "RelativeToolTip": "LIbrary\\Services\\Payment\\PaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T10:45:37.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BackgroundRefresh.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Services\\BackgroundRefresh.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
+              "RelativeToolTip": "LIbrary\\Services\\BackgroundRefresh.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:15:01.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookCatalogueController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\BookCatalogueController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\BookCatalogueController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:56:39.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Book.cshtml",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "RelativeToolTip": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAABkAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T22:59:19.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FineController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\FineController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\FineController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwCsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:17:09.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowBookController.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
+              "RelativeDocumentMoniker": "LIbrary\\Controllers\\BorrowBookController.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
+              "RelativeToolTip": "LIbrary\\Controllers\\BorrowBookController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAawEUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:55:50.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BorrowBookVM.cs",
+              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
+              "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
+              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
+              "RelativeToolTip": "LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:52:06.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ReturnBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\ReturnBook\\ReturnBookService.cs",
@@ -235,56 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BackgroundRefresh.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Services\\BackgroundRefresh.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BackgroundRefresh.cs",
-              "RelativeToolTip": "LIbrary\\Services\\BackgroundRefresh.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:15:01.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BorrowBookVM.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
-              "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
-              "RelativeToolTip": "LIbrary\\ViewModels\\BorrowBook\\BorrowBookVM.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T13:52:06.973Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "BookCatalogueController.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Controllers\\BookCatalogueController.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BookCatalogueController.cs",
-              "RelativeToolTip": "LIbrary\\Controllers\\BookCatalogueController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T13:56:39.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Book.cshtml",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
-              "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Book.cshtml",
-              "RelativeToolTip": "LIbrary\\Views\\BookCatalogue\\Book.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAABkAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T22:59:19.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AppDbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Data\\AppDbInitializer.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\AppDbInitializer.cs",
@@ -296,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ReminderService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Reminder\\ReminderService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\ReminderService.cs",
@@ -308,19 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BorrowBookController.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Controllers\\BorrowBookController.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\BorrowBookController.cs",
-              "RelativeToolTip": "LIbrary\\Controllers\\BorrowBookController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAvwCMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T13:55:50.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ReturnBookController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\ReturnBookController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\ReturnBookController.cs",
@@ -332,19 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FineController.cs",
-              "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
-              "RelativeDocumentMoniker": "LIbrary\\Controllers\\FineController.cs",
-              "ToolTip": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\FineController.cs",
-              "RelativeToolTip": "LIbrary\\Controllers\\FineController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwB4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:17:09.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Books.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BookCatalogue\\Books.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\BookCatalogue\\Books.cshtml",
@@ -356,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ReturnBookVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\ReturnBook\\ReturnBookVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\ReturnBook\\ReturnBookVM.cs",
@@ -368,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ReturnBook.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\ReturnBook\\ReturnBook.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\ReturnBook\\ReturnBook.cshtml",
@@ -380,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "20240424220216_V1.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Migrations\\20240424220216_V1.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240424220216_V1.cs",
@@ -392,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "LIbrary\\Data\\AppDbContext.cs",
@@ -404,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "20240424215634_V1.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Migrations\\20240424215634_V1.cs",
               "RelativeDocumentMoniker": "LIbrary\\Migrations\\20240424215634_V1.cs",
@@ -415,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "FineService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\FineReader\\FineService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\FineReader\\FineService.cs",
@@ -427,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Fine.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Models\\Fine.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Fine.cs",
@@ -439,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "BorrowItem.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Models\\BorrowItem.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\BorrowItem.cs",
@@ -451,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\EmailSender\\EmailSender.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\EmailSender\\EmailSender.cs",
@@ -463,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "LIbrary\\wwwroot\\css\\style.css",
@@ -475,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "BorrowBook.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\BorrowBook\\BorrowBook.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\BorrowBook\\BorrowBook.cshtml",
@@ -487,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "IEmailSender.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\EmailSender\\IEmailSender.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\EmailSender\\IEmailSender.cs",
@@ -499,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\appsettings.json",
               "RelativeDocumentMoniker": "LIbrary\\appsettings.json",
@@ -511,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Program.cs",
               "RelativeDocumentMoniker": "LIbrary\\Program.cs",
@@ -523,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\BookRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\BookRepository.cs",
@@ -535,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "BorrowBookService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BorrowBook\\BorrowBookService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\BorrowBook\\BorrowBookService.cs",
@@ -547,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\Profile\\Index.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Profile\\Index.cshtml",
@@ -559,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Home\\Index.cshtml",
@@ -571,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "BookReadVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BookCatalogue\\BookReadVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BookCatalogue\\BookReadVM.cs",
@@ -583,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "BorrowItemRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\BorrowItemRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\BorrowItemRepository.cs",
@@ -595,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\IBookRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\IBookRepository.cs",
@@ -607,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "IReminderService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\Reminder\\IReminderService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\Reminder\\IReminderService.cs",
@@ -619,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ReaderRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\ReaderRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\ReaderRepository.cs",
@@ -631,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "BookCopyRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\BookCopyRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\BookCopyRepository.cs",
@@ -643,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "EntityBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Generic\\EntityBaseRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Generic\\EntityBaseRepository.cs",
@@ -655,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "IEntityBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Generic\\IEntityBaseRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Generic\\IEntityBaseRepository.cs",
@@ -667,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "IEntityBase.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Generic\\IEntityBase.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Generic\\IEntityBase.cs",
@@ -679,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "IFineStatusRepository.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Repository\\Specific\\IFineStatusRepository.cs",
               "RelativeDocumentMoniker": "LIbrary\\Repository\\Specific\\IFineStatusRepository.cs",
@@ -691,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\HomeController.cs",
@@ -703,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Models\\Author.cs",
               "RelativeDocumentMoniker": "LIbrary\\Models\\Author.cs",
@@ -715,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "ProfileReadVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\Profile\\ProfileReadVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\Profile\\ProfileReadVM.cs",
@@ -727,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\AuthController.cs",
@@ -739,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "ProfileProfile.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Profiles\\ProfileProfile.cs",
               "RelativeDocumentMoniker": "LIbrary\\Profiles\\ProfileProfile.cs",
@@ -751,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "LIbrary\\Controllers\\ProfileController.cs",
@@ -763,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "BookCatalogueService.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Services\\BookCatalogue\\BookCatalogueService.cs",
               "RelativeDocumentMoniker": "LIbrary\\Services\\BookCatalogue\\BookCatalogueService.cs",
@@ -775,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Auth\\Register.cshtml",
@@ -787,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Shared\\_Layout.cshtml",
@@ -799,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "LIbrary\\Views\\Auth\\Login.cshtml",
@@ -811,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "BookCoverVM.cs",
               "DocumentMoniker": "C:\\Users\\ThinkPad\\source\\repos\\.NET\\LIbrary\\LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
               "RelativeDocumentMoniker": "LIbrary\\ViewModels\\BookCatalogue\\BookCoverVM.cs",
