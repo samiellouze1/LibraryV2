@@ -42,46 +42,28 @@ namespace LIbrary.Controllers
         [HttpPost]
         public async Task<IActionResult> BorrowBook(BorrowBookVM borrowBookVM)
         {
-            try
+            var bookId = HttpContext.Session.GetString("BookId");
+            var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
+            borrowBookVM.bookReadVM=_mapper.Map<BookReadVM>(book);
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
-
-                    // Log or handle the errors as needed
-                    foreach (var error in errors)
-                    {
-                        // You can log the errors, display them to the user, or handle them in any other appropriate way
-                        // For example, you can use TempData to display error messages on the next request
-                        Console.WriteLine(error);
-                    }
-                    // Model validation failed, return the view with validation errors
-                    return View(borrowBookVM);
-                }
-                else
-                {
-                    // Ensure that BookId is not null or empty
-                    var bookId = HttpContext.Session.GetString("BookId");
-                    var book = await _bookCatalogueService.GetBookByIdAsync(bookId);
-
-                    // Calculate amount and proceed to payment
-                    var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
-                    var amount = duration * book.price;
-                    var cancelUrl = Url.Action("SuccessBorrowBook", "BorrowBook",new { startDate= borrowBookVM.StartDate, endDate =borrowBookVM.EndDate, bookId= bookId }, Request.Scheme);
-                    var successUrl = Url.Action("Index", "Home", null, Request.Scheme);
-                    var currency = "usd";
-
-                    // Create checkout session
-                    var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl,book.title);
-                    return Redirect(session);
-                }
+                var errorMessage = string.Join(" | ", ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage));
+                ViewData["ErrorMessage"] = errorMessage;
+                return View(borrowBookVM);
             }
-            catch (Exception ex)
+            else
             {
-                // Log the exception
-                // Handle the exception gracefully, maybe display an error message to the user
-                return RedirectToAction("Error", "Home"); // Redirect to an error page
+                var duration = (borrowBookVM.EndDate - borrowBookVM.StartDate).Days;
+                var amount = duration * book.price;
+                var successUrl = Url.Action("SuccessBorrowBook", "BorrowBook",new { startDate= borrowBookVM.StartDate, endDate =borrowBookVM.EndDate, bookId= bookId }, Request.Scheme);
+                var cancelUrl = Url.Action("Index", "Home", null, Request.Scheme);
+                var currency = "usd";
+                var session = _paymentService.CreateCheckOutSession(amount.ToString(), currency, successUrl, cancelUrl,book.title);
+                return Redirect(session);
             }
+
         }
 
         public async Task<IActionResult> SuccessBorrowBook(DateTime startDate, DateTime endDate, string bookId)

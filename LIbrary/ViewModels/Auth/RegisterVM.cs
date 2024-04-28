@@ -20,7 +20,7 @@ namespace LIbrary.ViewModels.Auth
         public string ConfirmationPassword { get; set; }
 
         [Url(ErrorMessage = "Invalid Image URL")]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
         public bool RememberMe { get; set; }
     }

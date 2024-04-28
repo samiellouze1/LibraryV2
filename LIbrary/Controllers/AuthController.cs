@@ -112,6 +112,7 @@ namespace LIbrary.Controllers
                         }
                         else
                         {
+                            ViewBag.ErrorMessage = "Try to type in another password, 8 characters, one caps and one special character!";
                             return View(registervm);
                         }
                     }

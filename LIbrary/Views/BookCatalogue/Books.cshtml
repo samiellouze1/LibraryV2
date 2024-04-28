@@ -137,7 +137,7 @@
                                 </a>
                             </div>
                         }
-                        else if (item.isAlreadyBorrowed)
+                        else if (item.isCurrentlyBorrowed)
                         {
                             <div class="product_heading">
                                 <a asp-controller="ReturnBook" asp-action="ReturnBook" asp-route-bookId=@item.Id>

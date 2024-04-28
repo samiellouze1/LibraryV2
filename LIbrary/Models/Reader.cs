@@ -10,6 +10,6 @@ namespace LIbrary.Models
         public string Name { get; set; }
         public string ImageUrl { get; set; }
         public virtual ICollection<BorrowItem> borrowItems { get; set; }
-        public DateTime JoinedOn { get; set; }
+        public DateTime JoinedOn { get; set; } = DateTime.Today;
     }
 }

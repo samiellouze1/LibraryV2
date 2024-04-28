@@ -43,12 +43,16 @@ namespace LIbrary.Services.BookCatalogue
                 throw new ArgumentException("Reader ID cannot be null or empty", nameof(id));
 
             var reader = await _readerRepository.GetEagerReaderByIdAsync(id);
-            var books = reader?.borrowItems
-                .Where(bi => bi.borrowItemStatusId == "1")
-                .Select(r => r.bookCopy?.book)
-                .ToList() ?? new List<Book>();
-
-            return books;
+            var borrowItems = reader.borrowItems.Where(bi=>bi.borrowItemStatusId=="1");
+            var bookcopies = borrowItems.Select(bi => bi.bookCopy);
+            var books = bookcopies.Select(bc => bc.book).ToList();
+            var fullbooks = new List<Book>(books);
+            foreach (var book in books)
+            {
+                var fullbook = await _bookRepository.GetEagerBookByIdAsync(book.Id);
+                fullbooks.Add(fullbook);
+            }
+            return fullbooks.Distinct().ToList();
         }
 
         public async Task<List<Book>> GetReturnedBooksByReaderIdAsync(string id)
@@ -57,12 +61,16 @@ namespace LIbrary.Services.BookCatalogue
                 throw new ArgumentException("Reader ID cannot be null or empty", nameof(id));
 
             var reader = await _readerRepository.GetEagerReaderByIdAsync(id);
-            var books = reader?.borrowItems
-                .Where(bi => bi.borrowItemStatusId == "2")
-                .Select(r => r.bookCopy?.book)
-                .ToList() ?? new List<Book>();
-
-            return books;
+            var borrowItems = reader.borrowItems.Where(bi => bi.borrowItemStatusId == "2");
+            var bookcopies = borrowItems.Select(bi => bi.bookCopy);
+            var books = bookcopies.Select(bc => bc.book).ToList();
+            var fullbooks = new List<Book>(books);
+            foreach (var book in books)
+            {
+                var fullbook = await _bookRepository.GetEagerBookByIdAsync(book.Id);
+                fullbooks.Add(fullbook);
+            }
+            return fullbooks.Distinct().ToList();
         }
         public bool IsAlreadyBorrowed(Book book, string readerId)
         {
@@ -71,7 +79,7 @@ namespace LIbrary.Services.BookCatalogue
 
             var readerIds = book.bookCopies
                 .SelectMany(bc => bc.borrowItems)
-                .Where(bi => bi.borrowItemStatusId == "1")
+                .Where(bi => bi.borrowItemStatusId == "2")
                 .Select(bi => bi.readerId)
                 .ToList();
 
